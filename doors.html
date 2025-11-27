@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al-Kayan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Cairo', 'Inter', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-white min-h-screen flex flex-col">
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-neutral-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="index.html" class="flex items-center ml-auto">
+                    <img src="assets/logo.png" alt="Al-Kayan" class="h-40 w-auto">
+                </a>
+                <nav class="hidden md:flex items-center gap-8">
+                    <a href="index.html" class="transition-colors text-neutral-700 hover:text-[#8B7355]">الرئيسية</a>
+                    <a href="doors.html" class="transition-colors text-[#8B7355]">الأبواب</a>
+                    <a href="furniture.html" class="transition-colors text-neutral-700 hover:text-[#8B7355]">الأثاث</a>
+                    <a href="kitchens.html" class="transition-colors text-neutral-700 hover:text-[#8B7355]">المطابخ</a>
+                    <a href="about.html" class="transition-colors text-neutral-700 hover:text-[#8B7355]">من نحن</a>
+                </nav>
+                <button id="mobile-menu-btn" class="md:hidden p-2 text-neutral-700">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden py-4 border-t border-neutral-200">
+                <nav class="flex flex-col gap-4">
+                    <a href="index.html"
+                        class="text-right transition-colors text-neutral-700 hover:text-[#8B7355]">الرئيسية</a>
+                    <a href="doors.html" class="text-right transition-colors text-[#8B7355]">الأبواب</a>
+                    <a href="furniture.html"
+                        class="text-right transition-colors text-neutral-700 hover:text-[#8B7355]">الأثاث</a>
+                    <a href="kitchens.html"
+                        class="text-right transition-colors text-neutral-700 hover:text-[#8B7355]">المطابخ</a>
+                    <a href="about.html" class="text-right transition-colors text-neutral-700 hover:text-[#8B7355]">من
+                        نحن</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow pt-20">
+        <!-- Hero Section -->
+        <section class="relative pt-32 pb-24 bg-neutral-900">
+            <div class="absolute inset-0 opacity-30">
+                <img src="C:\Users\HP_ProOne_440_User\Desktop\alkayan\html_version\صور\Minimal Entry Door Design with Vertical Handle Accent - Trionua.jpeg"
+                    alt="Premium Doors" class="w-full h-full object-cover">
+            </div>
+            <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <span class="text-[#8B7355] tracking-wider uppercase">أبواب راقية</span>
+                <h1 class="text-white mt-4 mb-6 text-4xl font-bold">
+                    الأبواب الرئيسية والأبواب الداخلية بأناقة وجودة عالية<span class="block mt-2 text-[#8B7355]">أبواب
+                        راقية وآمنة</span>
+                </h1>
+                <p class="text-xl text-neutral-300 max-w-3xl mx-auto mb-8">
+                    أبوابنا تجمع بين الفخامة والمتانة، لتخلق مداخل تبقى في ذاكرة كل من يراها
+                </p>
+                <a href="contact.html"
+                    class="inline-block bg-[#8B7355] hover:bg-[#6F5C44] text-white px-8 py-3 rounded-md font-medium transition-colors">
+                    اطلب استشارة للأبواب
+                </a>
+            </div>
+        </section>
+
+        <!-- Door Types -->
+        <section class="py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="mb-4 text-3xl font-bold">تشكيلة أبواب متنوعة</h2>
+                    <p class="text-xl text-neutral-600 max-w-3xl mx-auto">
+                        أبواب مداخل رائعة وحلول داخلية مبتكرة بتصاميم عصرية </p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8 mb-16">
+                    <div class="bg-neutral-50 p-8 rounded-lg">
+                        <h3 class="mb-4 text-xl font-bold">أبواب رئيسية</h3>
+                        <p class="text-neutral-600 mb-6">
+                            تميّز بأبواب رئيسية مصممة خصيصًا لتجمع بين الأمان والجماليات والمتانة. مثالية للفلل والمنازل
+                            الفاخرة والمجمعات السكنية الراقية
+                        </p>
+                        <ul class="space-y-2">
+                            <li class="flex items-start gap-3"><i data-lucide="check"
+                                    class="text-[#8B7355] flex-shrink-0 mt-1 w-4 h-4"></i><span
+                                    class="text-neutral-700 text-sm">أنظمة أبواب مفردة ومزدوجة</span></li>
+                            <li class="flex items-start gap-3"><i data-lucide="check"
+                                    class="text-[#8B7355] flex-shrink-0 mt-1 w-4 h-4"></i><span
+                                    class="text-neutral-700 text-sm">أقفال عالية الأمان</span></li>
+                            <li class="flex items-start gap-3"><i data-lucide="check"
+                                    class="text-[#8B7355] flex-shrink-0 mt-1 w-4 h-4"></i><span
+                                    class="text-neutral-700 text-sm">مواد مقاومة للعوامل الجوية</span></li>
+                            <li class="flex items-start gap-3"><i data-lucide="check"
+                                    class="text-[#8B7355] flex-shrink-0 mt-1 w-4 h-4"></i><span
+                                    class="text-neutral-700 text-sm">تصميم ومقاسات مخصصة حسب الطلب</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-neutral-50 p-8 rounded-lg">
+                        <h3 class="mb-4 text-xl font-bold">أبواب الداخلية</h3>
+                        <p class="text-neutral-600 mb-6">
+                            عزز جمال ومساحات منزلك بأبواب داخلية مصممة لتندمج بسلاسة مع ديكورك. اختر من بين التصاميم
+                            الحديثة والكلاسيكية والمعاصرة لتناسب ذوقك تمامًا
+                        </p>
+                        <ul class="space-y-2">
+                            <li class="flex items-start gap-3"><i data-lucide="check"
+                                    class="text-[#8B7355] flex-shrink-0 mt-1 w-4 h-4"></i><span
+                                    class="text-neutral-700 text-sm">أبواب مفصلية ومحورية</span></li>
+                            <li class="flex items-start gap-3"><i data-lucide="check"
+                                    class="text-[#8B7355] flex-shrink-0 mt-1 w-4 h-4"></i><span
+                                    class="text-neutral-700 text-sm">راحة في الاستخدام اليومي</span></li>
+                            <li class="flex items-start gap-3"><i data-lucide="check"
+                                    class="text-[#8B7355] flex-shrink-0 mt-1 w-4 h-4"></i><span
+                                    class="text-neutral-700 text-sm">خيارات تشطيب متعددة</span></li>
+                            <li class="flex items-start gap-3"><i data-lucide="check"
+                                    class="text-[#8B7355] flex-shrink-0 mt-1 w-4 h-4"></i><span
+                                    class="text-neutral-700 text-sm">أجهزة ومقابض فاخرة</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-neutral-50 p-8 rounded-lg">
+                        <h3 class="mb-4 text-xl font-bold">أبواب المحورية</h3>
+                        <p class="text-neutral-600 mb-6">
+                            تميّز مدخلك أو غرفتك بأبواب محورية أنيقة وعصرية، توفر حركة سلسة وفريدة عند الفتح والإغلاق.
+                            تصميم مبتكر يجمع بين الجمال والمتانة
+                        </p>
+                        <ul class="space-y-2">
+                            <li class="flex items-start gap-3"><i data-lucide="check"
+                                    class="text-[#8B7355] flex-shrink-0 mt-1 w-4 h-4"></i><span
+                                    class="text-neutral-700 text-sm">حركة سلسة بزاوية دوران كاملة</span></li>
+                            <li class="flex items-start gap-3"><i data-lucide="check"
+                                    class="text-[#8B7355] flex-shrink-0 mt-1 w-4 h-4"></i><span
+                                    class="text-neutral-700 text-sm">تصميم عصري يناسب المنازل والفلل الفاخرة</span></li>
+                            <li class="flex items-start gap-3"><i data-lucide="check"
+                                    class="text-[#8B7355] flex-shrink-0 mt-1 w-4 h-4"></i><span
+                                    class="text-neutral-700 text-sm">مواد عالية الجودة: خشب، زجاج، أو معدنية</span></li>
+                            <li class="flex items-start gap-3"><i data-lucide="check"
+                                    class="text-[#8B7355] flex-shrink-0 mt-1 w-4 h-4"></i><span
+                                    class="text-neutral-700 text-sm">مقابض وأجهزة فاخرة لتعزيز الفخامة</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Key Benefits -->
+                <div class="grid md:grid-cols-4 gap-6">
+                    <div class="text-center">
+                        <div
+                            class="w-16 h-16 bg-[#8B7355]/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="shield" class="text-[#8B7355] w-7 h-7"></i>
+                        </div>
+                        <h4 class="mb-2 font-bold">الأمان أولاً</h4>
+                        <p class="text-sm text-neutral-600">أقفال عالية الأمان وإطارات معززة</p>
+                    </div>
+                    <div class="text-center">
+                        <div
+                            class="w-16 h-16 bg-[#8B7355]/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="award" class="text-[#8B7355] w-7 h-7"></i>
+                        </div>
+                        <h4 class="mb-2 font-bold">جودة فاخرة</h4>
+                        <p class="text-sm text-neutral-600">أجود المواد وحرفية خبيرة</p>
+                    </div>
+                    <div class="text-center">
+                        <div
+                            class="w-16 h-16 bg-[#8B7355]/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="clock" class="text-[#8B7355] w-7 h-7"></i>
+                        </div>
+                        <h4 class="mb-2 font-bold">يدوم طويلاً</h4>
+                        <p class="text-sm text-neutral-600">مصمم لتحمل سنوات من الاستخدام اليومي</p>
+                    </div>
+                    <div class="text-center">
+                        <div
+                            class="w-16 h-16 bg-[#8B7355]/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="check" class="text-[#8B7355] w-7 h-7"></i>
+                        </div>
+                        <h4 class="mb-2 font-bold">تصميم مخصص</h4>
+                        <p class="text-sm text-neutral-600">مصمم حسب مواصفاتك الدقيقة</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="py-16 bg-neutral-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="mb-4 text-3xl font-bold">معرض الأبواب</h2>
+                    <p class="text-xl text-neutral-600 max-w-3xl mx-auto mb-8">
+                    </p>
+                </div>
+
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="group cursor-pointer">
+                        <div class="relative aspect-[3/4] overflow-hidden rounded-lg mb-4">
+                            <img src="C:\Users\HP_ProOne_440_User\Desktop\alkayan\html_version\صور\photo_2024-05-06_22-12-07.jpg"
+                                alt="Grand Entrance Door"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <div
+                                    class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                    <div class="text-sm text-[#8B7355] bg-white/20 px-2 py-1 rounded inline-block mb-1">
+                                        باب داخلي </div>
+                                    <div class="text-sm">باب داخلي مصنوع من خشب موقن</div>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="group-hover:text-[#8B7355] transition-colors font-bold">باب داخلي</h3>
+                    </div>
+                    <div class="group cursor-pointer">
+                        <div class="relative aspect-[3/4] overflow-hidden rounded-lg mb-4">
+                            <img src="https://scontent.fmji4-1.fna.fbcdn.net/v/t39.30808-6/557606815_794844926636857_5499087550351044993_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_ohc=f66ODQr7vtUQ7kNvwFFmi35&_nc_oc=AdlS-j0ok3O5siQ_iEnc-ecNrcqlwiI01U4stOg4SomVkJ14H-UJSb4ykG8LdP6_0Uw&_nc_zt=23&_nc_ht=scontent.fmji4-1.fna&_nc_gid=SIUSmg7iYvtx4KhcfE1Vaw&oh=00_AfjxZ-k5CMslPN0iBVIQBM_fOEUMOTuxlFKo2WFlqUnhkw&oe=692E2C1C"
+                                alt="Modern Interior Door"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <div
+                                    class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                    <div class="text-sm text-[#8B7355] bg-white/20 px-2 py-1 rounded inline-block mb-1">
+                                        باب داخلي</div>
+                                    <div class="text-sm">باب داخلي مصنوع من خشب موقن</div>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="group-hover:text-[#8B7355] transition-colors font-bold">باب داخلي</h3>
+                    </div>
+                    <div class="group cursor-pointer">
+                        <div class="relative aspect-[3/4] overflow-hidden rounded-lg mb-4">
+                            <img src="C:\Users\HP_ProOne_440_User\Desktop\alkayan\html_version\صور\photo_2025-11-27_15-57-22.jpg"
+                                alt="Glass Sliding Door"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <div
+                                    class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                    <div class="text-sm text-[#8B7355] bg-white/20 px-2 py-1 rounded inline-block mb-1">
+                                        باب رئيسية</div>
+                                    <div class="text-sm">باب رئيسي مصنوع من خشب موقن</div>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="group-hover:text-[#8B7355] transition-colors font-bold">باب رئيسي</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Gallery Section1 -->
+
+        <section class="pt-16 pb-24 bg-neutral-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="group cursor-pointer">
+                        <div class="relative aspect-[3/4] overflow-hidden rounded-lg mb-4">
+                            <img src="https://scontent.fmji4-1.fna.fbcdn.net/v/t39.30808-6/484899722_643998278388190_9189686164029713728_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=SESxR54gWEkQ7kNvwGBuHLk&_nc_oc=AdmLYx6KqVqZoYSWZNs7MXZS3Q7_YYAQC6d7h9um6lJKnDxzTxVJ-9ymyUU5Z8GseFw&_nc_zt=23&_nc_ht=scontent.fmji4-1.fna&_nc_gid=ekrXfjTnMseE9zcnxhR8bg&oh=00_AfjViO_QJpRqnaWmexLB7voklYkCRdoOBEBtKSA7A5sqDA&oe=692E3529"
+                                alt="Grand Entrance Door"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <div
+                                    class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                    <div class="text-sm text-[#8B7355] bg-white/20 px-2 py-1 rounded inline-block mb-1">
+                                        باب داخلي </div>
+                                    <div class="text-sm">باب داخلي مصنوع من خشب موقن</div>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="group-hover:text-[#8B7355] transition-colors font-bold">باب داخلي</h3>
+                    </div>
+                    <div class="group cursor-pointer">
+                        <div class="relative aspect-[3/4] overflow-hidden rounded-lg mb-4">
+                            <img src="https://scontent.fmji4-1.fna.fbcdn.net/v/t39.30808-6/484992813_643998091721542_4031598648642408298_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=44Vx7Ejg1UUQ7kNvwGHCujr&_nc_oc=Adn5ZHuTGF9GHAkQ012Aisc0mAVWtiuQ2UNIjcV2Az1f4rL8WhIA88oDP_9tb9L3FKE&_nc_zt=23&_nc_ht=scontent.fmji4-1.fna&_nc_gid=uvNz3mg_MiHDuDl7Pk88Fg&oh=00_AfgH7OnQFqPGOceCLpAWkQouup7mHXbPS-gHt_V0GK-gRg&oe=692E4D3E"
+                                alt="Modern Interior Door"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <div
+                                    class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                    <div class="text-sm text-[#8B7355] bg-white/20 px-2 py-1 rounded inline-block mb-1">
+                                        باب داخلي</div>
+                                    <div class="text-sm">باب داخلي مصنوع من خشب موقن</div>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="group-hover:text-[#8B7355] transition-colors font-bold">باب داخلي</h3>
+                    </div>
+                    <div class="group cursor-pointer">
+                        <div class="relative aspect-[3/4] overflow-hidden rounded-lg mb-4">
+                            <img src="https://scontent.fmji4-1.fna.fbcdn.net/v/t39.30808-6/485359734_643998095054875_4853441935157385721_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=Byp1-uIswIUQ7kNvwGKuhI9&_nc_oc=AdnrijcAl5MFdFmx4l8HAlkpA-DQzkpBDApuUw42R6lfkKAJuXlEKHeZfKpI3F9sMpo&_nc_zt=23&_nc_ht=scontent.fmji4-1.fna&_nc_gid=1nCc9SBYCHngt81iT6MnDQ&oh=00_AfhTvMKlxE_dqD-BKUD1yymzcBKSAtuLAMl12mIC5m_MDw&oe=692E516E"
+                                alt="Glass Sliding Door"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <div
+                                    class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                    <div class="text-sm text-[#8B7355] bg-white/20 px-2 py-1 rounded inline-block mb-1">
+                                        باب داخلي</div>
+                                    <div class="text-sm">باب داخلي مصنوع من خشب موقن</div>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="group-hover:text-[#8B7355] transition-colors font-bold">باب داخلي</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Gallery Section2 -->
+
+        <section class="pt-16 pb-24 bg-neutral-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="group cursor-pointer">
+                        <div class="relative aspect-[3/4] overflow-hidden rounded-lg mb-4">
+                            <img src="https://scontent.fmji4-1.fna.fbcdn.net/v/t39.30808-6/484852583_643998175054867_2805975131516437521_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=wwcBLqUMtEMQ7kNvwG_bX59&_nc_oc=AdniTcKKswETEE7E_zZQf7wDa6AcNX8JE_NJjBnoBmiWfbN8FiU5CMboKsbq9dtncXA&_nc_zt=23&_nc_ht=scontent.fmji4-1.fna&_nc_gid=GpcbgAMGTvTvs8XA4phVMQ&oh=00_AfjIYImbingr_wsJrNRZEem4CYD93KN0brq44Rh4klhlGQ&oe=692E3415"
+                                alt="Grand Entrance Door"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <div
+                                    class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                    <div class="text-sm text-[#8B7355] bg-white/20 px-2 py-1 rounded inline-block mb-1">
+                                        باب رئيسي </div>
+                                    <div class="text-sm">باب رئيسي مصنوع من خشب موقن</div>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="group-hover:text-[#8B7355] transition-colors font-bold">باب رئيسي</h3>
+                    </div>
+                    <div class="group cursor-pointer">
+                        <div class="relative aspect-[3/4] overflow-hidden rounded-lg mb-4">
+                            <img src="https://scontent.fmji4-1.fna.fbcdn.net/v/t39.30808-6/485371201_643998021721549_1563553633178532570_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_ohc=XfvyWJioy2cQ7kNvwEaPV8c&_nc_oc=AdlZzf6J_DxgqTRGc4nJxafdIrahN3lAqm1uCtZ-bY5yjdQUVCUyYzGykPUjWWC3jks&_nc_zt=23&_nc_ht=scontent.fmji4-1.fna&_nc_gid=KZzWlyrhl647xmTNZfANuQ&oh=00_AfgPII3pgUSe1GfYOK8Wq7Wfjz9goPuiPS4-74Wkgktm-Q&oe=692E1BD9"
+                                alt="Modern Interior Door"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <div
+                                    class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                    <div class="text-sm text-[#8B7355] bg-white/20 px-2 py-1 rounded inline-block mb-1">
+                                        باب داخلي</div>
+                                    <div class="text-sm">باب داخلي مصنوع من خشب موقن</div>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="group-hover:text-[#8B7355] transition-colors font-bold">باب داخلي</h3>
+                    </div>
+                    <div class="group cursor-pointer">
+                        <div class="relative aspect-[3/4] overflow-hidden rounded-lg mb-4">
+                            <img src="https://scontent.fmji4-1.fna.fbcdn.net/v/t39.30808-6/485316014_643998035054881_7637642324671129587_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_ohc=w8S75Ao71d0Q7kNvwHfiEj0&_nc_oc=AdnY1UlFYT1feeW2s5vnv7Yji7mRZ4kiEpsqd94qGqtSs3Oy35ns3iqaBav_XZ54HBk&_nc_zt=23&_nc_ht=scontent.fmji4-1.fna&_nc_gid=9HNODJL_9LVBoYTs-B9C_Q&oh=00_AfiuMsHTX5pFrUoWsAYLludpdbWQmzbW6t61lykHl-4WAg&oe=692E461F"
+                                alt="Glass Sliding Door"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <div
+                                    class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                    <div class="text-sm text-[#8B7355] bg-white/20 px-2 py-1 rounded inline-block mb-1">
+                                        باب داخلي</div>
+                                    <div class="text-sm">باب داخلي مصنوع من خشب موقن</div>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="group-hover:text-[#8B7355] transition-colors font-bold">باب داخلي</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Gallery Section3 -->
+
+        <section class="pt-16 pb-24 bg-neutral-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="group cursor-pointer">
+                        <div class="relative aspect-[3/4] overflow-hidden rounded-lg mb-4">
+                            <img src="https://scontent.fmji4-1.fna.fbcdn.net/v/t39.30808-6/485375531_643998215054863_1255939880358643419_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=aq3m8bsE7ioQ7kNvwF8Cj1S&_nc_oc=AdlKt4buH7sBPizuUIs7otcaNQiz94LP_-ktaCsH4F5aTUzPb6X527Vh8NvXSD88DVs&_nc_zt=23&_nc_ht=scontent.fmji4-1.fna&_nc_gid=9c8OiUB4mFtLwyggXFS2aA&oh=00_AfjYI722S7H9KRifnurUNBpVT_5Zf4P6F3kQGSEt_f5Ayw&oe=692E429D"
+                                alt="Grand Entrance Door"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <div
+                                    class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                    <div class="text-sm text-[#8B7355] bg-white/20 px-2 py-1 rounded inline-block mb-1">
+                                        باب رئيسي </div>
+                                    <div class="text-sm">باب رئيسي مصنوع من خشب موقن</div>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="group-hover:text-[#8B7355] transition-colors font-bold">باب رئيسي</h3>
+                    </div>
+                    <div class="group cursor-pointer">
+                        <div class="relative aspect-[3/4] overflow-hidden rounded-lg mb-4">
+                            <img src="https://scontent.fmji4-1.fna.fbcdn.net/v/t39.30808-6/485764337_643998048388213_2309623615220800837_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_ohc=U2hIEltL3GEQ7kNvwHFDzgG&_nc_oc=AdnAZyKeAQVOhxI8nayXsY-pORZhsoxTFz39X2JVtAtIhy3d19F5UMX9QGTSzv0lzZM&_nc_zt=23&_nc_ht=scontent.fmji4-1.fna&_nc_gid=HFhlau0Y5An0W4MSBaAJ9A&oh=00_AfgcW_OGvoUPOdG_ffTb4aT_G8DN4uOH8IIGKdluTDzeBw&oe=692E304C"
+                                alt="Modern Interior Door"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <div
+                                    class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                    <div class="text-sm text-[#8B7355] bg-white/20 px-2 py-1 rounded inline-block mb-1">
+                                        باب رئيسي</div>
+                                    <div class="text-sm">باب رئيسي مصنوع من خشب موقن</div>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="group-hover:text-[#8B7355] transition-colors font-bold">باب رئيسي</h3>
+                    </div>
+                    <div class="group cursor-pointer">
+                        <div class="relative aspect-[3/4] overflow-hidden rounded-lg mb-4">
+                            <img src="https://scontent.fmji4-1.fna.fbcdn.net/v/t39.30808-6/484844330_643998171721534_2991525811474085462_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=2vL4hZHsO3QQ7kNvwErnGMw&_nc_oc=AdlgJx3jLd6ckl5utSSJdWf78C1kkipIkeB0H9KVbrX1U4jpPOLJsd8MdutzIznGASQ&_nc_zt=23&_nc_ht=scontent.fmji4-1.fna&_nc_gid=Bsatdorfj-ckT2CwhG1yTg&oh=00_AfgM4ooDQ08oh9b6Dfh5ESUuFAVAuXVvea2AmixZjtNZJQ&oe=692E4F2C"
+                                alt="Glass Sliding Door"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <div
+                                    class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                    <div class="text-sm text-[#8B7355] bg-white/20 px-2 py-1 rounded inline-block mb-1">
+                                        باب رئيسي</div>
+                                    <div class="text-sm">باب رئيسي مصنوع من خشب موقن</div>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="group-hover:text-[#8B7355] transition-colors font-bold">باب رئيسي</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- CTA Section -->
+        <section class="py-24 bg-[#8B7355]">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-white mb-6 text-3xl font-bold">
+                    جاهز لاكتشاف أبوابك الجديدة؟
+                </h2>
+                <p class="text-xl text-neutral-50 mb-8">
+                    استشر خبراء الأبواب لدينا لاختيار الحل المثالي لمنزلك. سنرشدك في اختيار النمط، المواد، والميزات التي
+                    تناسب احتياجاتك تمامًا
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="contact.html"
+                        class="bg-white text-[#8B7355] hover:bg-neutral-100 px-8 py-3 rounded-md font-medium transition-colors">
+                        احصل على استشارة مجانية
+                    </a>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-neutral-900 text-neutral-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <div class="md:col-span-1 text-right md:text-right">
+                    <div class="mb-4 flex justify-end md:justify-start">
+                        <img src="assets/logo.png" alt="الكيان" class="h-40 w-auto">
+                    </div>
+                    <p class="text-sm mb-6">أثاث وأبواب ومطابخ مخصصة فاخرة مصنوعة بتميز ودقة</p>
+                    <div class="flex gap-4 justify-end md:justify-start">
+                        <a href="https://www.facebook.com/share/17PHz2ZTSb/"
+                            class="w-10 h-10 bg-neutral-800 rounded-lg flex items-center justify-center hover:bg-[#8B7355] transition-colors"><i
+                                data-lucide="facebook" class="w-5 h-5"></i></a>
+                        <a href="https://www.instagram.com/al_kayanly?igsh=ZnNvb2V2MWIyanFv"
+                            class="w-10 h-10 bg-neutral-800 rounded-lg flex items-center justify-center hover:bg-[#8B7355] transition-colors"><i
+                                data-lucide="instagram" class="w-5 h-5"></i></a>
+                    </div>
+                </div>
+                <div dir="rtl">
+                    <h4 class="text-white mb-4 font-bold">روابط سريعة</h4>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="hover:text-[#8B7355] transition-colors">الرئيسية</a></li>
+                        <li><a href="projects.html" class="hover:text-[#8B7355] transition-colors">المشاريع</a></li>
+                        <li><a href="process.html" class="hover:text-[#8B7355] transition-colors">العمليات</a></li>
+                        <li><a href="contact.html" class="hover:text-[#8B7355] transition-colors">تواصل</a></li>
+                        <li><a href="about.html" class="hover:text-[#8B7355] transition-colors">من نحن</a></li>
+                    </ul>
+                </div>
+                <div dir="rtl">
+                    <h4 class="text-white mb-4 font-bold">خدماتنا</h4>
+                    <ul class="space-y-3">
+                        <li><a href="kitchens.html" class="hover:text-[#8B7355] transition-colors">مطابخ فاخرة</a></li>
+                        <li><a href="doors.html" class="hover:text-[#8B7355] transition-colors">أبواب راقية</a></li>
+                        <li><a href="furniture.html" class="hover:text-[#8B7355] transition-colors">أثاث راقٍ</a></li>
+                        <li><a href="contact.html" class="hover:text-[#8B7355] transition-colors">استشارة</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white mb-4 font-bold">تواصل معنا</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="map-pin" class="text-[#8B7355] mt-1 flex-shrink-0 w-5 h-5"></i>
+                            <span class="text-sm">طرابلس - ليبيا</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="phone" class="text-[#8B7355] mt-1 flex-shrink-0 w-5 h-5"></i>
+                            <div class="flex flex-col">
+                                <span class="text-sm dir-ltr text-left">+218913338808</span>
+                                <span class="text-sm dir-ltr text-left">+218923338808</span>
+                                <span class="text-sm dir-ltr text-left">+218933338808</span>
+                                <span class="text-sm dir-ltr text-left">+218943338808</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3"><i data-lucide="mail"
+                                class="text-[#8B7355] mt-1 flex-shrink-0 w-5 h-5"></i><span
+                                class="text-sm">info@alkayan.com.ly</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-neutral-800">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                    <p class="text-sm">© 2025 الكيان. جميع الحقوق محفوظة</p>
+                    <div class="flex gap-6 text-sm">
+                        <a href="#" class="hover:text-[#8B7355] transition-colors">الخصوصية</a>
+                        <a href="#" class="hover:text-[#8B7355] transition-colors">الشروط</a>
+                        <a href="#" class="hover:text-[#8B7355] transition-colors">ملفات تعريف الارتباط</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = mobileMenuBtn.querySelector('i');
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.setAttribute('data-lucide', 'menu');
+            } else {
+                menuIcon.setAttribute('data-lucide', 'x');
+            }
+            lucide.createIcons();
+        });
+    </script>
+</body>
+
+</html>

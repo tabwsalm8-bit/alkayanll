@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>من نحن - الكيان</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Cairo', 'Inter', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-white min-h-screen flex flex-col">
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-neutral-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="index.html" class="flex items-center ml-auto">
+                    <img src="assets/logo.png" alt="الكيان" class="h-40 w-auto">
+                </a>
+                <nav class="hidden md:flex items-center gap-8">
+                    <a href="index.html" class="transition-colors text-neutral-700 hover:text-[#8B7355]">الرئيسية</a>
+                    <a href="doors.html" class="transition-colors text-neutral-700 hover:text-[#8B7355]">الأبواب</a>
+                    <a href="furniture.html" class="transition-colors text-neutral-700 hover:text-[#8B7355]">الأثاث</a>
+                    <a href="kitchens.html" class="transition-colors text-neutral-700 hover:text-[#8B7355]">المطابخ</a>
+                    <a href="about.html" class="transition-colors text-[#8B7355]">من نحن</a>
+                    <div class="relative group">
+                        <button class="p-2 text-neutral-700 hover:text-[#8B7355] transition-colors">
+                            <i data-lucide="more-vertical" class="w-5 h-5"></i>
+                        </button>
+                        <div
+                            class="absolute left-0 mt-2 w-48 bg-white border border-neutral-200 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                            <a href="invoice.html"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 text-right">فاتورتي</a>
+                        </div>
+                    </div>
+                </nav>
+                <button id="mobile-menu-btn" class="md:hidden p-2 text-neutral-700">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden py-4 border-t border-neutral-200">
+                <nav class="flex flex-col gap-4">
+                    <a href="index.html"
+                        class="text-right transition-colors text-neutral-700 hover:text-[#8B7355]">الرئيسية</a>
+                    <a href="doors.html"
+                        class="text-right transition-colors text-neutral-700 hover:text-[#8B7355]">الأبواب</a>
+                    <a href="furniture.html"
+                        class="text-right transition-colors text-neutral-700 hover:text-[#8B7355]">الأثاث</a>
+                    <a href="kitchens.html"
+                        class="text-right transition-colors text-neutral-700 hover:text-[#8B7355]">المطابخ</a>
+                    <a href="about.html" class="text-right transition-colors text-[#8B7355]">من نحن</a>
+                    <a href="invoice.html"
+                        class="text-right transition-colors text-neutral-700 hover:text-[#8B7355]">فاتورتي</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow pt-20">
+        <!-- Hero Section -->
+        <section class="pt-32 pb-16 bg-neutral-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto">
+                    <span class="text-[#8B7355] tracking-wider uppercase">عن الكيان</span>
+                    <h1 class="mt-4 mb-6 text-4xl font-bold">
+                        نصنع التميز منذ 2008
+                    </h1>
+                    <p class="text-xl text-neutral-600">
+                        نحن شركة رائدة في تصنيع الأثاث والأبواب والمطابخ، مكرسون لتحويل المساحات من خلال التصميم
+                        الاستثنائي والجودة التي لا تضاهى.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Story Section -->
+        <section class="py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="mb-6 text-3xl font-bold">قصتنا</h2>
+                        <p class="text-neutral-600 mb-6">
+                            تأسست "الكيان" في عام 2008 برؤية بسيطة: ابتكار أثاث وديكورات داخلية تصمد أمام اختبار الزمن.
+                            ما بدأ كورشة صغيرة نما ليصبح اسمًا رائدًا في حلول الأثاث والأبواب والمطابخ المخصصة في جميع
+                            أنحاء المملكة العربية السعودية.
+                        </p>
+                        <p class="text-neutral-600 mb-6">
+                            رحلتنا مبنية على أساس الحرفية التقليدية الممزوجة بحس التصميم الحديث. كل قطعة نصنعها تحكي قصة
+                            من التفاني والدقة والتميز الفني.
+                        </p>
+                        <p class="text-neutral-600">
+                            اليوم، نخدم عملاء مميزين يقدرون الفرق الذي تحدثه المواد عالية الجودة والحرفية الخبيرة
+                            والخدمة الشخصية في إنشاء مساحات استثنائية حقًا.
+                        </p>
+                    </div>
+                    <div class="relative">
+                        <div class="aspect-[4/5] rounded-lg overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1620398399429-fa1c5fbc8668?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjcmFmdHNtYW4lMjB3b3Jrc2hvcCUyMHdvb2R8ZW58MXx8fHwxNzYxNDM4NzI5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                                alt="Craftsmanship" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission & Vision -->
+        <section class="py-24 bg-neutral-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div class="bg-white p-8 rounded-lg">
+                        <div class="w-16 h-16 bg-[#8B7355]/10 rounded-full flex items-center justify-center mb-6">
+                            <i data-lucide="target" class="text-[#8B7355] w-8 h-8"></i>
+                        </div>
+                        <h3 class="mb-4 text-xl font-bold">مهمتنا</h3>
+                        <p class="text-neutral-600">
+                            تقديم أثاث وأبواب ومطابخ مخصصة استثنائية تتجاوز توقعات عملائنا. نحن ملتزمون بالجمع بين
+                            الحرفية الفائقة والمواد المتميزة والتصميم المبتكر لإنشاء قطع تعزز وترتقي بكل مساحة.
+                        </p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg">
+                        <div class="w-16 h-16 bg-[#8B7355]/10 rounded-full flex items-center justify-center mb-6">
+                            <i data-lucide="heart" class="text-[#8B7355] w-8 h-8"></i>
+                        </div>
+                        <h3 class="mb-4 text-xl font-bold">رؤيتنا</h3>
+                        <p class="text-neutral-600">
+                            أن نكون الوجهة الأولى للأثاث والديكورات الداخلية الفاخرة المخصصة في المملكة العربية
+                            السعودية. نطمح لوضع معايير جديدة في الجودة والتصميم ورضا العملاء مع الحفاظ على قيم الحرفية
+                            التقليدية.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Values -->
+        <section class="py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="mb-4 text-3xl font-bold">قيمنا الجوهرية</h2>
+                    <p class="text-xl text-neutral-600 max-w-3xl mx-auto">
+                        هذه المبادئ توجه كل ما نقوم به، من الاستشارة الأولية إلى التركيب النهائي
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-[#8B7355]/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="award" class="text-[#8B7355] w-7 h-7"></i>
+                        </div>
+                        <h3 class="mb-3 text-lg font-bold">الجودة أولاً</h3>
+                        <p class="text-neutral-600">
+                            لا نتنازل أبدًا عن المواد أو المصنعية. تخضع كل قطعة لرقابة جودة صارمة لضمان تلبيتها
+                            لمعاييرنا الدقيقة وتجاوز توقعاتك.
+                        </p>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-[#8B7355]/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="users" class="text-[#8B7355] w-7 h-7"></i>
+                        </div>
+                        <h3 class="mb-3 text-lg font-bold">التركيز على العميل</h3>
+                        <p class="text-neutral-600">
+                            رؤيتك هي أولويتنا. نعمل معك عن كثب طوال العملية بأكملها، لضمان توافق كل التفاصيل مع تفضيلاتك
+                            واحتياجات نمط حياتك.
+                        </p>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-[#8B7355]/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="zap" class="text-[#8B7355] w-7 h-7"></i>
+                        </div>
+                        <h3 class="mb-3 text-lg font-bold">الابتكار</h3>
+                        <p class="text-neutral-600">
+                            نمزج تقنيات الحرفية العريقة مع التكنولوجيا الحديثة واتجاهات التصميم لإنشاء قطع خالدة ومعاصرة
+                            في آن واحد.
+                        </p>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-[#8B7355]/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="shield" class="text-[#8B7355] w-7 h-7"></i>
+                        </div>
+                        <h3 class="mb-3 text-lg font-bold">النزاهة</h3>
+                        <p class="text-neutral-600">
+                            التواصل الصادق، والتسعير الشفاف، والممارسات التجارية الأخلاقية تشكل أساس علاقاتنا مع العملاء
+                            والشركاء.
+                        </p>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-[#8B7355]/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="heart" class="text-[#8B7355] w-7 h-7"></i>
+                        </div>
+                        <h3 class="mb-3 text-lg font-bold">الشغف</h3>
+                        <p class="text-neutral-600">
+                            كل مشروع هو عمل نابع من القلب. يجلب فريقنا التفاني والحماس لكل قطعة نصنعها، مما يضمن نتائج
+                            استثنائية في كل مرة.
+                        </p>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-[#8B7355]/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="target" class="text-[#8B7355] w-7 h-7"></i>
+                        </div>
+                        <h3 class="mb-3 text-lg font-bold">الاهتمام بالتفاصيل</h3>
+                        <p class="text-neutral-600">
+                            التميز يكمن في التفاصيل. من اختيار المواد إلى التشطيب النهائي، نولي اهتمامًا دقيقًا لكل جانب
+                            من جوانب عملنا.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats -->
+        <section class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                    <div class="text-center">
+                        <div class="text-4xl text-[#8B7355] mb-2 font-bold">15+</div>
+                        <div class="text-neutral-600">سنة خبرة</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl text-[#8B7355] mb-2 font-bold">500+</div>
+                        <div class="text-neutral-600">مشروع مكتمل</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl text-[#8B7355] mb-2 font-bold">100%</div>
+                        <div class="text-neutral-600">رضا العملاء</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl text-[#8B7355] mb-2 font-bold">50+</div>
+                        <div class="text-neutral-600">حرفي ماهر</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-neutral-900 text-neutral-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <div class="md:col-span-1 text-right md:text-right">
+                    <div class="mb-4 flex justify-end md:justify-start">
+                        <img src="assets/logo.png" alt="الكيان" class="h-40 w-auto">
+                    </div>
+                    <p class="text-sm mb-6">أثاث وأبواب ومطابخ مخصصة فاخرة مصنوعة بتميز ودقة</p>
+                    <div class="flex gap-4 justify-end md:justify-start">
+                        <a href="#"
+                            class="w-10 h-10 bg-neutral-800 rounded-lg flex items-center justify-center hover:bg-[#8B7355] transition-colors"><i
+                                data-lucide="facebook" class="w-5 h-5"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 bg-neutral-800 rounded-lg flex items-center justify-center hover:bg-[#8B7355] transition-colors"><i
+                                data-lucide="instagram" class="w-5 h-5"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 bg-neutral-800 rounded-lg flex items-center justify-center hover:bg-[#8B7355] transition-colors"><i
+                                data-lucide="linkedin" class="w-5 h-5"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-white mb-4 font-bold">روابط سريعة</h4>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="hover:text-[#8B7355] transition-colors">الرئيسية</a></li>
+                        <li><a href="about.html" class="hover:text-[#8B7355] transition-colors">من نحن</a></li>
+                        <li><a href="projects.html" class="hover:text-[#8B7355] transition-colors">المشاريع</a></li>
+                        <li><a href="process.html" class="hover:text-[#8B7355] transition-colors">العمليات</a></li>
+                        <li><a href="contact.html" class="hover:text-[#8B7355] transition-colors">تواصل</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white mb-4 font-bold">خدماتنا</h4>
+                    <ul class="space-y-3">
+                        <li><a href="furniture.html" class="hover:text-[#8B7355] transition-colors">أثاث مخصص</a></li>
+                        <li><a href="doors.html" class="hover:text-[#8B7355] transition-colors">أبواب فاخرة</a></li>
+                        <li><a href="kitchens.html" class="hover:text-[#8B7355] transition-colors">مطابخ راقية</a></li>
+                        <li><a href="contact.html" class="hover:text-[#8B7355] transition-colors">استشارة</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white mb-4 font-bold">تواصل معنا</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3"><i data-lucide="map-pin"
+                                class="text-[#8B7355] mt-1 flex-shrink-0 w-5 h-5"></i><span class="text-sm">الرياض،
+                                السعودية</span></li>
+                        <li class="flex items-start gap-3"><i data-lucide="phone"
+                                class="text-[#8B7355] mt-1 flex-shrink-0 w-5 h-5"></i><span
+                                class="text-sm dir-ltr text-left">+966 XX XXX XXXX</span></li>
+                        <li class="flex items-start gap-3"><i data-lucide="mail"
+                                class="text-[#8B7355] mt-1 flex-shrink-0 w-5 h-5"></i><span
+                                class="text-sm">info@alkiyan.com</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-neutral-800">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                    <p class="text-sm">© 2025 الكيان. جميع الحقوق محفوظة</p>
+                    <div class="flex gap-6 text-sm">
+                        <a href="#" class="hover:text-[#8B7355] transition-colors">الخصوصية</a>
+                        <a href="#" class="hover:text-[#8B7355] transition-colors">الشروط</a>
+                        <a href="#" class="hover:text-[#8B7355] transition-colors">ملفات تعريف الارتباط</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = mobileMenuBtn.querySelector('i');
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.setAttribute('data-lucide', 'menu');
+            } else {
+                menuIcon.setAttribute('data-lucide', 'x');
+            }
+            lucide.createIcons();
+        });
+    </script>
+</body>
+
+</html>

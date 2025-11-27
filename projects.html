@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المشاريع - الكيان</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Cairo', 'Inter', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-white min-h-screen flex flex-col">
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-neutral-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="index.html" class="flex items-center ml-auto">
+                    <img src="assets/logo.png" alt="الكيان" class="h-40 w-auto">
+                </a>
+                <nav class="hidden md:flex items-center gap-8">
+                    <a href="index.html" class="transition-colors text-neutral-700 hover:text-[#8B7355]">الرئيسية</a>
+                    <a href="doors.html" class="transition-colors text-neutral-700 hover:text-[#8B7355]">الأبواب</a>
+                    <a href="furniture.html" class="transition-colors text-neutral-700 hover:text-[#8B7355]">الأثاث</a>
+                    <a href="kitchens.html" class="transition-colors text-neutral-700 hover:text-[#8B7355]">المطابخ</a>
+                    <a href="about.html" class="transition-colors text-neutral-700 hover:text-[#8B7355]">من نحن</a>
+                    <div class="relative group">
+                        <button class="p-2 text-neutral-700 hover:text-[#8B7355] transition-colors">
+                            <i data-lucide="more-vertical" class="w-5 h-5"></i>
+                        </button>
+                        <div
+                            class="absolute left-0 mt-2 w-48 bg-white border border-neutral-200 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                            <a href="invoice.html"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 text-right">فاتورتي</a>
+                        </div>
+                    </div>
+                </nav>
+                <button id="mobile-menu-btn" class="md:hidden p-2 text-neutral-700">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden py-4 border-t border-neutral-200">
+                <nav class="flex flex-col gap-4">
+                    <a href="index.html"
+                        class="text-right transition-colors text-neutral-700 hover:text-[#8B7355]">الرئيسية</a>
+                    <a href="doors.html"
+                        class="text-right transition-colors text-neutral-700 hover:text-[#8B7355]">الأبواب</a>
+                    <a href="furniture.html"
+                        class="text-right transition-colors text-neutral-700 hover:text-[#8B7355]">الأثاث</a>
+                    <a href="kitchens.html"
+                        class="text-right transition-colors text-neutral-700 hover:text-[#8B7355]">المطابخ</a>
+                    <a href="about.html" class="text-right transition-colors text-neutral-700 hover:text-[#8B7355]">من
+                        نحن</a>
+                    <a href="invoice.html"
+                        class="text-right transition-colors text-neutral-700 hover:text-[#8B7355]">فاتورتي</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow pt-20">
+        <!-- Hero Section -->
+        <section class="pt-32 pb-16 bg-neutral-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto">
+                    <span class="text-[#8B7355] tracking-wider uppercase">معرض الأعمال / Our Projects</span>
+                    <h1 class="mt-4 mb-6 text-4xl font-bold">
+                        Portfolio
+                        <span class="block mt-2 text-[#8B7355]">معرض أعمالنا المميزة</span>
+                    </h1>
+                    <p class="text-xl text-neutral-600">
+                        استكشف مجموعة من مشاريعنا المكتملة التي تعكس خبرتنا وجودة عملنا
+                        <br>
+                        Explore our collection of completed projects showcasing our expertise and quality
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Gallery -->
+        <section class="py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <!-- Category Filter -->
+                <div class="flex flex-wrap justify-center gap-4 mb-16" id="category-filters">
+                    <button class="filter-btn bg-[#8B7355] text-white px-6 py-2 rounded-md transition-colors"
+                        data-category="all">الكل / All</button>
+                    <button
+                        class="filter-btn bg-white border border-neutral-300 text-neutral-700 hover:border-amber-600 hover:text-[#8B7355] px-6 py-2 rounded-md transition-colors"
+                        data-category="kitchens">المطابخ / Kitchens</button>
+                    <button
+                        class="filter-btn bg-white border border-neutral-300 text-neutral-700 hover:border-amber-600 hover:text-[#8B7355] px-6 py-2 rounded-md transition-colors"
+                        data-category="doors">الأبواب / Doors</button>
+                    <button
+                        class="filter-btn bg-white border border-neutral-300 text-neutral-700 hover:border-amber-600 hover:text-[#8B7355] px-6 py-2 rounded-md transition-colors"
+                        data-category="furniture">الأثاث / Furniture</button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8" id="projects-grid">
+                    <!-- Project Items will be populated here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="py-16 bg-[#8B7355]">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center text-white">
+                    <div>
+                        <div class="text-4xl mb-2 font-bold">500+</div>
+                        <div class="text-amber-100">مشروع مكتمل<br>Projects Completed</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl mb-2 font-bold">100%</div>
+                        <div class="text-amber-100">رضا العملاء<br>Client Satisfaction</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl mb-2 font-bold">15+</div>
+                        <div class="text-amber-100">سنوات خبرة<br>Years Experience</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl mb-2 font-bold">50+</div>
+                        <div class="text-amber-100">حرفي ماهر<br>Skilled Craftsmen</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-24 bg-neutral-50">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="mb-6 text-3xl font-bold">
+                    هل أنت مستعد لبدء مشروعك؟
+                    <span class="block mt-2">Ready to Start Your Project?</span>
+                </h2>
+                <p class="text-xl text-neutral-600 mb-8">
+                    تواصل معنا اليوم للحصول على استشارة مجانية وعرض سعر
+                    <br>
+                    Contact us today for a free consultation and quote
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="contact.html"
+                        class="bg-[#8B7355] hover:bg-[#6F5C44] text-white px-8 py-3 rounded-md font-medium transition-colors">
+                        تواصل معنا / Contact Us
+                    </a>
+                    <a href="process.html"
+                        class="border border-amber-600 text-[#8B7355] hover:bg-[#8B7355] hover:text-white px-8 py-3 rounded-md font-medium transition-colors">
+                        تعرف على عملياتنا / Our Process
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-neutral-900 text-neutral-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <div class="md:col-span-1 text-right md:text-right">
+                    <div class="mb-4 flex justify-end md:justify-start">
+                        <img src="assets/logo.png" alt="الكيان" class="h-40 w-auto">
+                    </div>
+                    <p class="text-sm mb-6">أثاث وأبواب ومطابخ مخصصة فاخرة مصنوعة بتميز ودقة</p>
+                    <div class="flex gap-4 justify-end md:justify-start">
+                        <a href="#"
+                            class="w-10 h-10 bg-neutral-800 rounded-lg flex items-center justify-center hover:bg-[#8B7355] transition-colors"><i
+                                data-lucide="facebook" class="w-5 h-5"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 bg-neutral-800 rounded-lg flex items-center justify-center hover:bg-[#8B7355] transition-colors"><i
+                                data-lucide="instagram" class="w-5 h-5"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 bg-neutral-800 rounded-lg flex items-center justify-center hover:bg-[#8B7355] transition-colors"><i
+                                data-lucide="linkedin" class="w-5 h-5"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-white mb-4 font-bold">روابط سريعة</h4>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="hover:text-[#8B7355] transition-colors">الرئيسية</a></li>
+                        <li><a href="about.html" class="hover:text-[#8B7355] transition-colors">من نحن</a></li>
+                        <li><a href="projects.html" class="hover:text-[#8B7355] transition-colors">المشاريع</a></li>
+                        <li><a href="process.html" class="hover:text-[#8B7355] transition-colors">العمليات</a></li>
+                        <li><a href="contact.html" class="hover:text-[#8B7355] transition-colors">تواصل</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white mb-4 font-bold">خدماتنا</h4>
+                    <ul class="space-y-3">
+                        <li><a href="furniture.html" class="hover:text-[#8B7355] transition-colors">أثاث مخصص</a></li>
+                        <li><a href="doors.html" class="hover:text-[#8B7355] transition-colors">أبواب فاخرة</a></li>
+                        <li><a href="kitchens.html" class="hover:text-[#8B7355] transition-colors">مطابخ راقية</a></li>
+                        <li><a href="contact.html" class="hover:text-[#8B7355] transition-colors">استشارة</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white mb-4 font-bold">تواصل معنا</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3"><i data-lucide="map-pin"
+                                class="text-[#8B7355] mt-1 flex-shrink-0 w-5 h-5"></i><span class="text-sm">الرياض،
+                                السعودية</span></li>
+                        <li class="flex items-start gap-3"><i data-lucide="phone"
+                                class="text-[#8B7355] mt-1 flex-shrink-0 w-5 h-5"></i><span
+                                class="text-sm dir-ltr text-left">+966 XX XXX XXXX</span></li>
+                        <li class="flex items-start gap-3"><i data-lucide="mail"
+                                class="text-[#8B7355] mt-1 flex-shrink-0 w-5 h-5"></i><span
+                                class="text-sm">info@alkiyan.com</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-neutral-800">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                    <p class="text-sm">© 2025 الكيان. جميع الحقوق محفوظة</p>
+                    <div class="flex gap-6 text-sm">
+                        <a href="#" class="hover:text-[#8B7355] transition-colors">الخصوصية</a>
+                        <a href="#" class="hover:text-[#8B7355] transition-colors">الشروط</a>
+                        <a href="#" class="hover:text-[#8B7355] transition-colors">ملفات تعريف الارتباط</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = mobileMenuBtn.querySelector('i');
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.setAttribute('data-lucide', 'menu');
+            } else {
+                menuIcon.setAttribute('data-lucide', 'x');
+            }
+            lucide.createIcons();
+        });
+
+        // Projects Data
+        const projects = [
+            {
+                id: 1,
+                title: 'فيلا حديثة بالرياض',
+                titleEn: 'Modern Villa in Riyadh',
+                category: 'furniture',
+                categoryLabel: 'الأثاث / Furniture',
+                image: 'https://images.unsplash.com/photo-1680503146476-abb8c752e1f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBmdXJuaXR1cmUlMjBpbnRlcmlvcnxlbnwxfHx8fDE3NjE0Mzg3Mjd8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+                description: 'أثاث صالة كامل مع تصميم معاصر',
+                year: '2024',
+                location: 'الرياض'
+            },
+            {
+                id: 2,
+                title: 'مطبخ فاخر',
+                titleEn: 'Luxury Kitchen Design',
+                category: 'kitchens',
+                categoryLabel: 'المطابخ / Kitchens',
+                image: 'https://images.unsplash.com/photo-1639405069836-f82aa6dcb900?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBraXRjaGVuJTIwbHV4dXJ5fGVufDF8fHx8MTc2MTQwMjEzOXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+                description: 'مطبخ عصري بتشطيبات راقية',
+                year: '2024',
+                location: 'جدة'
+            },
+            {
+                id: 3,
+                title: 'أبواب مدخل فخمة',
+                titleEn: 'Grand Entrance Doors',
+                category: 'doors',
+                categoryLabel: 'الأبواب / Doors',
+                image: 'https://images.unsplash.com/photo-1758384077439-8282cc397b34?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlbGVnYW50JTIwZG9vcnMlMjBlbnRyYW5jZXxlbnwxfHx8fDE3NjE0Mzg3Mjh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+                description: 'أبواب خشبية مخصصة للمدخل الرئيسي',
+                year: '2024',
+                location: 'الدمام'
+            },
+            {
+                id: 4,
+                title: 'تصميم داخلي راقي',
+                titleEn: 'Premium Interior Design',
+                category: 'furniture',
+                categoryLabel: 'الأثاث / Furniture',
+                image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBpbnRlcmlvciUyMGRlc2lnbnxlbnwxfHx8fDE3NjEzNTAxODB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+                description: 'تصميم وأثاث داخلي متكامل',
+                year: '2023',
+                location: 'الرياض'
+            },
+            {
+                id: 5,
+                title: 'مجموعة غرفة نوم',
+                titleEn: 'Master Bedroom Suite',
+                category: 'furniture',
+                categoryLabel: 'الأثاث / Furniture',
+                image: 'https://images.unsplash.com/photo-1638885930125-85350348d266?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBsaXZpbmclMjByb29tfGVufDF8fHx8MTc2MTQxNjAzM3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+                description: 'أثاث غرفة نوم فاخر مصنوع حسب الطلب',
+                year: '2023',
+                location: 'الخبر'
+            },
+            {
+                id: 6,
+                title: 'مطبخ كلاسيكي',
+                titleEn: 'Classic Kitchen',
+                category: 'kitchens',
+                categoryLabel: 'المطابخ / Kitchens',
+                image: 'https://images.unsplash.com/photo-1642979427252-13d5fd18bb61?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB3aGl0ZSUyMGtpdGNoZW58ZW58MXx8fHwxNzYxNDM5MTk5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+                description: 'تصميم مطبخ كلاسيكي بلمسات عصرية',
+                year: '2023',
+                location: 'مكة'
+            },
+            {
+                id: 7,
+                title: 'أبواب داخلية',
+                titleEn: 'Interior Doors Collection',
+                category: 'doors',
+                categoryLabel: 'الأبواب / Doors',
+                image: 'https://images.unsplash.com/photo-1568374247505-5bb7ecac3119?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3b29kZW4lMjBkb29yJTIwaW50ZXJpb3J8ZW58MXx8fHwxNzYxNDM5MDc3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+                description: 'مجموعة أبواب داخلية بتصميم معاصر',
+                year: '2024',
+                location: 'الرياض'
+            },
+            {
+                id: 8,
+                title: 'غرفة طعام فاخرة',
+                titleEn: 'Luxury Dining Room',
+                category: 'furniture',
+                categoryLabel: 'الأثاث / Furniture',
+                image: 'https://images.unsplash.com/photo-1704040686446-428673c1c887?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkaW5pbmclMjByb29tJTIwZnVybml0dXJlfGVufDF8fHx8MTc2MTQzOTA3Nnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+                description: 'طاولة طعام وكراسي مصنوعة يدوياً',
+                year: '2023',
+                location: 'جدة'
+            },
+            {
+                id: 9,
+                title: 'مطبخ إيطالي',
+                titleEn: 'Italian Style Kitchen',
+                category: 'kitchens',
+                categoryLabel: 'المطابخ / Kitchens',
+                image: 'https://images.unsplash.com/photo-1621494548002-bfc916172ead?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBkYXJrJTIwa2l0Y2hlbnxlbnwxfHx8fDE3NjE0MzkxOTl8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+                description: 'مطبخ بتصميم إيطالي فاخر',
+                year: '2024',
+                location: 'الرياض'
+            }
+        ];
+
+        const projectsGrid = document.getElementById('projects-grid');
+        const filterBtns = document.querySelectorAll('.filter-btn');
+
+        function renderProjects(category) {
+            projectsGrid.innerHTML = '';
+            const filtered = category === 'all' ? projects : projects.filter(p => p.category === category);
+
+            filtered.forEach(project => {
+                const item = document.createElement('div');
+                item.className = 'group cursor-pointer';
+                item.innerHTML = `
+                    <div class="relative aspect-[4/3] overflow-hidden rounded-lg mb-4">
+                        <img src="${project.image}" alt="${project.title}" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                <div class="text-sm text-[#8B7355] mb-2">${project.categoryLabel}</div>
+                                <div class="text-sm mb-2">${project.description}</div>
+                                <div class="text-xs text-neutral-300">
+                                    ${project.year} • ${project.location}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="mb-1 group-hover:text-[#8B7355] transition-colors font-bold">
+                        ${project.title}
+                    </h3>
+                    <p class="text-sm text-neutral-600">${project.titleEn}</p>
+                `;
+                projectsGrid.appendChild(item);
+            });
+        }
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Update active state
+                filterBtns.forEach(b => {
+                    b.classList.remove('bg-[#8B7355]', 'text-white');
+                    b.classList.add('bg-white', 'text-neutral-700', 'border', 'border-neutral-300');
+                });
+                btn.classList.remove('bg-white', 'text-neutral-700', 'border', 'border-neutral-300');
+                btn.classList.add('bg-[#8B7355]', 'text-white');
+
+                // Render projects
+                renderProjects(btn.dataset.category);
+            });
+        });
+
+        // Initial render
+        renderProjects('all');
+    </script>
+</body>
+
+</html>
