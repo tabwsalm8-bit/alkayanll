@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>الأثاث - الكيان</title>
+    <title>Al-Kayan</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/55.png">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <link
@@ -24,7 +26,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
                 <a href="index.html" class="flex items-center ml-auto">
-                    <img src="assets/logo.png" alt="الكيان" class="h-40 w-auto">
+                    <img src="assets/logo.png" alt="الكيان" class="h-20 w-auto">
                 </a>
                 <nav class="hidden md:flex items-center gap-8">
                     <a href="index.html" class="transition-colors text-neutral-700 hover:text-[#8B7355]">الرئيسية</a>
@@ -32,16 +34,6 @@
                     <a href="furniture.html" class="transition-colors text-[#8B7355]">الأثاث</a>
                     <a href="kitchens.html" class="transition-colors text-neutral-700 hover:text-[#8B7355]">المطابخ</a>
                     <a href="about.html" class="transition-colors text-neutral-700 hover:text-[#8B7355]">من نحن</a>
-                    <div class="relative group">
-                        <button class="p-2 text-neutral-700 hover:text-[#8B7355] transition-colors">
-                            <i data-lucide="more-vertical" class="w-5 h-5"></i>
-                        </button>
-                        <div
-                            class="absolute left-0 mt-2 w-48 bg-white border border-neutral-200 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-                            <a href="invoice.html"
-                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 text-right">فاتورتي</a>
-                        </div>
-                    </div>
                 </nav>
                 <button id="mobile-menu-btn" class="md:hidden p-2 text-neutral-700">
                     <i data-lucide="menu" class="w-6 h-6"></i>
@@ -58,8 +50,6 @@
                         class="text-right transition-colors text-neutral-700 hover:text-[#8B7355]">المطابخ</a>
                     <a href="about.html" class="text-right transition-colors text-neutral-700 hover:text-[#8B7355]">من
                         نحن</a>
-                    <a href="invoice.html"
-                        class="text-right transition-colors text-neutral-700 hover:text-[#8B7355]">فاتورتي</a>
                 </nav>
             </div>
         </div>
@@ -69,19 +59,16 @@
         <!-- Hero Section -->
         <section class="relative pt-32 pb-24 bg-neutral-900">
             <div class="absolute inset-0 opacity-30">
-                <img src="https://images.unsplash.com/photo-1638885930125-85350348d266?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBsaXZpbmclMjByb29tfGVufDF8fHx8MTc2MTQxNjAzM3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-                    alt="Luxury Furniture" class="w-full h-full object-cover">
+                <img src="assets/zz.jpeg" alt="Luxury Furniture" class="w-full h-full object-cover">
             </div>
             <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <span class="text-[#8B7355] tracking-wider uppercase">أثاث مخصص</span>
+                <span class="text-[#8B7355] tracking-wider uppercase">أثاث راقٍ</span>
                 <h1 class="text-white mt-4 mb-6 text-4xl font-bold">
-                    تصميم أثاث حسب الطلب
-                    <span class="block mt-2 text-[#8B7355]">أثاث مخصص وفاخر</span>
+                    كل قطعة تروي قصة <span class="block mt-2 text-[#8B7355]">أناقة فريدة</span>
                 </h1>
                 <p class="text-xl text-neutral-300 max-w-3xl mx-auto mb-8">
-                    كل قطعة تحكي قصة. تم تصميم أثاثنا المخصص وصنعه وفقًا لمواصفاتك الدقيقة، مما يعكس أسلوبك الشخصي ويعزز
-                    مساحات المعيشة الخاصة بك.
-                </p>
+                    من التصاميم المبتكرة إلى التنفيذ الدقيق، كل قطعة من أثاثنا الفاخر مصممة خصيصًا لتعكس شخصيتك وتضفي
+                    على منزلك لمسة فخامة لا تُنسى </p>
                 <a href="contact.html"
                     class="inline-block bg-[#8B7355] hover:bg-[#6F5C44] text-white px-8 py-3 rounded-md font-medium transition-colors">
                     اطلب استشارة للأثاث
@@ -93,10 +80,10 @@
         <section class="py-24 bg-white">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16">
-                    <h2 class="mb-4 text-3xl font-bold">مجموعات الأثاث لدينا</h2>
+                    <h2 class="mb-4 text-3xl font-bold">اكتشف مجموعات أثاثنا</h2>
                     <p class="text-xl text-neutral-600 max-w-3xl mx-auto">
-                        من غرف المعيشة إلى المكاتب الخاصة، نصنع أثاثًا لكل مساحة في منزلك
-                    </p>
+                        سواء كانت غرفة المعيشة، غرفة النوم، أو مكتبك الخاص، مجموعاتنا من الأثاث الفاخر صممت لتمنح كل
+                        مساحة شخصية فريدة وأناقة لا تُنسى </p>
                 </div>
 
                 <div class="grid md:grid-cols-2 gap-8">
@@ -154,99 +141,234 @@
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-12">
                     <h2 class="mb-4 text-3xl font-bold">معرض الأثاث</h2>
-                    <p class="text-xl text-neutral-600 max-w-3xl mx-auto mb-8">
-                        اكتشف محفظتنا من قطع الأثاث المخصصة
-                    </p>
                 </div>
 
                 <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
                     <div class="group cursor-pointer">
                         <div class="relative aspect-[3/4] overflow-hidden rounded-lg mb-4">
-                            <img src="https://images.unsplash.com/photo-1638885930125-85350348d266?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBsaXZpbmclMjByb29tfGVufDF8fHx8MTc2MTQxNjAzM3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                            <img src="https://scontent.fmji4-1.fna.fbcdn.net/v/t39.30808-6/485125463_643998211721530_3063635057253912442_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_ohc=DnNLGhXlylAQ7kNvwGBBy00&_nc_oc=Adm6cix2eSBfolCgWFbYoPmTyS7h5prXvSNH79XHW4tsJDK2xcqEw1MQvtMVCwqQ1I4&_nc_zt=23&_nc_ht=scontent.fmji4-1.fna&_nc_gid=MdqaVZUNO2Uq_LEj1NaEtg&oh=00_AfhZblLHs77cbVK-5zhutjItTc-cEjGBMYRA1JuidpCwlw&oe=692E6C6B"
                                 alt="Luxury Living Suite"
                                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                             <div
                                 class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                 <div
                                     class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                                    <div class="text-sm text-[#8B7355] mb-1">Living Room</div>
-                                    <div class="text-sm">Contemporary sofa set with custom upholstery</div>
+                                    <div class="text-sm text-[#8B7355] mb-1">سلم</div>
+                                    <div class="text-sm">سلم خشب موقن</div>
                                 </div>
                             </div>
                         </div>
-                        <h4 class="group-hover:text-[#8B7355] transition-colors font-bold">Luxury Living Suite</h4>
+                        <h4 class="group-hover:text-[#8B7355] transition-colors font-bold">سلم</h4>
                     </div>
                     <div class="group cursor-pointer">
                         <div class="relative aspect-[3/4] overflow-hidden rounded-lg mb-4">
-                            <img src="https://images.unsplash.com/photo-1680503146476-abb8c752e1f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxiZWRyb29tJTIwZnVybml0dXJlJTIwbHV4dXJ5fGVufDF8fHx8MTc2MTQzOTA3Nnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                            <img src="https://scontent.fmji4-1.fna.fbcdn.net/v/t39.30808-6/484851325_643998128388205_5474257773495139176_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_ohc=3Vm9VZQ32AwQ7kNvwFv6tmh&_nc_oc=AdkkmOHatPuIIh07T-K936MDHf4vj92WXSzlyxGGnnPsk45bed4F0qkMamw0UMcZmhE&_nc_zt=23&_nc_ht=scontent.fmji4-1.fna&_nc_gid=cmg2SLY6WLJ0aFKJW0zwlQ&oh=00_Afg9__B5J_o0bU4asnXFIo7pl994fVU53aW2OhOJy60TZQ&oe=692E5B1C"
                                 alt="Master Bedroom Suite"
                                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                             <div
                                 class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                 <div
                                     class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                                    <div class="text-sm text-[#8B7355] mb-1">Bedroom</div>
-                                    <div class="text-sm">Complete bedroom furniture set</div>
+                                    <div class="text-sm text-[#8B7355] mb-1">سلم</div>
+                                    <div class="text-sm">سلم خشب موقن</div>
                                 </div>
                             </div>
                         </div>
-                        <h4 class="group-hover:text-[#8B7355] transition-colors font-bold">Master Bedroom Suite</h4>
+                        <h4 class="group-hover:text-[#8B7355] transition-colors font-bold">سلم</h4>
                     </div>
                     <div class="group cursor-pointer">
                         <div class="relative aspect-[3/4] overflow-hidden rounded-lg mb-4">
-                            <img src="https://images.unsplash.com/photo-1704040686446-428673c1c887?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkaW5pbmclMjByb29tJTIwZnVybml0dXJlfGVufDF8fHx8MTc2MTQzOTA3Nnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                            <img src="https://scontent.fmji4-1.fna.fbcdn.net/v/t39.30808-6/484941839_643998141721537_2637247519171530970_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=X1QfD5R80xIQ7kNvwEZIr46&_nc_oc=AdlMrUJ0RCMtDCpUM-lbs3zCsd8K81ol-0AeQlhrbBcVJsi0iuBVM0-5TY4dB-t2OBM&_nc_zt=23&_nc_ht=scontent.fmji4-1.fna&_nc_gid=9AOfck-e2ROL6FSxamk6Jg&oh=00_AfiDXFhxCXU-5YL_-WkTfY-EzofRFB4HkO81MRvzTwMVOw&oe=692E5695"
                                 alt="Elegant Dining Set"
                                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                             <div
                                 class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                 <div
                                     class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                                    <div class="text-sm text-[#8B7355] mb-1">Dining Room</div>
-                                    <div class="text-sm">Handcrafted dining table with chairs</div>
+                                    <div class="text-sm text-[#8B7355] mb-1">سلم</div>
+                                    <div class="text-sm">سلم خشب موقن</div>
                                 </div>
                             </div>
                         </div>
-                        <h4 class="group-hover:text-[#8B7355] transition-colors font-bold">Elegant Dining Set</h4>
+                        <h4 class="group-hover:text-[#8B7355] transition-colors font-bold">سلم</h4>
                     </div>
                     <div class="group cursor-pointer">
                         <div class="relative aspect-[3/4] overflow-hidden rounded-lg mb-4">
-                            <img src="https://images.unsplash.com/photo-1718049719677-85afb466425a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxvZmZpY2UlMjBkZXNrJTIwZnVybml0dXJlfGVufDF8fHx8MTc2MTQzOTMyN3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                            <img src="https://scontent.fmji4-1.fna.fbcdn.net/v/t39.30808-6/484994193_643998188388199_3539423062762177846_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_ohc=WF9priwI40YQ7kNvwFeFCUP&_nc_oc=Adl0_hLyOSWOQNuKodXHmclqDKgdQzOh-E9E5PYZpR0TM-1XjopEPxzzHNhRce8H52E&_nc_zt=23&_nc_ht=scontent.fmji4-1.fna&_nc_gid=yVYNVE0KDKAEOn4mofPv1Q&oh=00_Afhp786SSQemZjksLFmAN8WvR8y6gexhW2A9XI8oQvCnng&oe=692E4616"
                                 alt="Executive Office Suite"
                                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                             <div
                                 class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                 <div
                                     class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                                    <div class="text-sm text-[#8B7355] mb-1">Office</div>
-                                    <div class="text-sm">Premium office desk and storage</div>
+                                    <div class="text-sm text-[#8B7355] mb-1">سلم</div>
+                                    <div class="text-sm">سلم خشب موقن</div>
                                 </div>
                             </div>
                         </div>
-                        <h4 class="group-hover:text-[#8B7355] transition-colors font-bold">Executive Office Suite</h4>
+                        <h4 class="group-hover:text-[#8B7355] transition-colors font-bold">سلم</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Gallery Section1 -->
+        <section class="pt-2 pb-16 bg-neutral-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="group cursor-pointer">
+                        <div class="relative aspect-[3/4] overflow-hidden rounded-lg mb-4">
+                            <img src="https://scontent.fmji4-1.fna.fbcdn.net/v/t39.30808-6/484971553_643998041721547_6814047030685531517_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=7Ec7uKaN3U4Q7kNvwGeN8f7&_nc_oc=AdlXbz5ddZRBuMuwp37fDNEMHHI7X4g6Xi2Gh2lRxm71Sa_yvvFGsLdWbuIx9IGijpQ&_nc_zt=23&_nc_ht=scontent.fmji4-1.fna&_nc_gid=AiTpo4HnDWmRK-krLk0KwQ&oh=00_AfgbjpygEgQs61lEAqGugq-XdzlWTYWke6X_qzqT4FAqKg&oe=692E6500"
+                                alt="Luxury Living Suite"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <div
+                                    class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                    <div class="text-sm text-[#8B7355] mb-1">سلم</div>
+                                    <div class="text-sm">سلم خشب موقن</div>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="group-hover:text-[#8B7355] transition-colors font-bold">سلم</h4>
+                    </div>
+                    <div class="group cursor-pointer">
+                        <div class="relative aspect-[3/4] overflow-hidden rounded-lg mb-4">
+                            <img src="https://scontent.fmji4-1.fna.fbcdn.net/v/t39.30808-6/484860547_643998071721544_3770216228060401594_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=eIlWlYKUT2sQ7kNvwGZEqX1&_nc_oc=Admc-U9JuNnSw-CovaWoZ3NJVmssgOGsR8By6-LFZ1lXaqahTuXZg_rRHNyA49lKBdw&_nc_zt=23&_nc_ht=scontent.fmji4-1.fna&_nc_gid=xEX9Fv1uzmmr2QDg47NXQA&oh=00_AfgnfUWue04fh5K07qjjFZkLelcBySdOAj3KOIsu7ArDDg&oe=692E5BD8"
+                                alt="Master Bedroom Suite"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <div
+                                    class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                    <div class="text-sm text-[#8B7355] mb-1">سلم</div>
+                                    <div class="text-sm">سلم خشب موقن</div>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="group-hover:text-[#8B7355] transition-colors font-bold">سلم</h4>
+                    </div>
+                    <div class="group cursor-pointer">
+                        <div class="relative aspect-[3/4] overflow-hidden rounded-lg mb-4">
+                            <img src="https://scontent.fmji4-1.fna.fbcdn.net/v/t39.30808-6/485355146_643998058388212_9014024927449290946_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=6TP2oWrAu5kQ7kNvwF2T9d1&_nc_oc=AdlBmrMUaQT8iriKYMO_a2HRXUzLZlvB5gx2WxZPTxZ2yOy1LzAmRVYhdKc9dOWODmc&_nc_zt=23&_nc_ht=scontent.fmji4-1.fna&_nc_gid=-yyYrfdRi1lqfBHtL_GEuA&oh=00_Afh6DJNcMjUULa-rPTU9UpY4UMxnnswfbDhKSVySQnaJ1g&oe=692E5641"
+                                alt="Elegant Dining Set"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <div
+                                    class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                    <div class="text-sm text-[#8B7355] mb-1">سلم</div>
+                                    <div class="text-sm">سلم خشب موقن</div>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="group-hover:text-[#8B7355] transition-colors font-bold">سلم</h4>
+                    </div>
+                    <div class="group cursor-pointer">
+                        <div class="relative aspect-[3/4] overflow-hidden rounded-lg mb-4">
+                            <img src="https://scontent.fmji4-1.fna.fbcdn.net/v/t39.30808-6/485006629_643998015054883_4860298702822271280_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=j-PPA-nhJmgQ7kNvwGrwvRn&_nc_oc=AdndqzZCeRhmyikwECQHhKTGDNPredzY2Yy1YBSdbvF95r7tS4DKj_7Wkn-3t8VCvWg&_nc_zt=23&_nc_ht=scontent.fmji4-1.fna&_nc_gid=6btsk-zIpAYUZ17VPByAdw&oh=00_AfgqOTRmUEGkf7KunPTuo_k32Mfv0mXCWS3ycaIZ_yPjBA&oe=692E609B"
+                                alt="Executive Office Suite"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <div
+                                    class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                    <div class="text-sm text-[#8B7355] mb-1">سلم</div>
+                                    <div class="text-sm">سلم خشب موقن</div>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="group-hover:text-[#8B7355] transition-colors font-bold">سلم</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Gallery Section1 -->
+        <section class="pt-2 pb-16 bg-neutral-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="group cursor-pointer">
+                        <div class="relative aspect-[3/4] overflow-hidden rounded-lg mb-4">
+                            <img src="https://scontent.fmji4-1.fna.fbcdn.net/v/t39.30808-6/485789626_643998018388216_1677483243480021511_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_ohc=wBG14XAgRL8Q7kNvwEXVbRz&_nc_oc=Adk_uyH2HUnJK3NNtLXtPoJfV4PXQ6_L2fTihTXzktXwGxn6t65iyUTmHNB3wSUHGxQ&_nc_zt=23&_nc_ht=scontent.fmji4-1.fna&_nc_gid=i1mLINJcdHW57qXe60LLJA&oh=00_AfjmWt45lJBtP8C1Ek26jsck8hZ71pSTw_riGungwB4ZZw&oe=692E5FE7"
+                                alt="Luxury Living Suite"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <div
+                                    class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                    <div class="text-sm text-[#8B7355] mb-1">غرفة ملابس</div>
+                                    <div class="text-sm">غرفة ملابس MDF - زجاج</div>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="group-hover:text-[#8B7355] transition-colors font-bold">غرفة ملابس</h4>
+                    </div>
+                    <div class="group cursor-pointer">
+                        <div class="relative aspect-[3/4] overflow-hidden rounded-lg mb-4">
+                            <img src="https://scontent.fmji4-1.fna.fbcdn.net/v/t39.30808-6/485160265_643998208388197_4685747392069373546_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_ohc=sCGp_ZarZ4AQ7kNvwGZIkKR&_nc_oc=AdmjSSeaHqGzro8zSvRWXVrPzZGMmq6v2T5pQbUZp1sJQ7u9LhXZE55eRM7aOPwIzc4&_nc_zt=23&_nc_ht=scontent.fmji4-1.fna&_nc_gid=8fJANpMKoMfu80DbWg1u2Q&oh=00_Afi0OVsItPNpzQ8A1akSGlJKMhTUoxXQlwR83dp63oBb6A&oe=692E5ADE"
+                                alt="Master Bedroom Suite"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <div
+                                    class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                    <div class="text-sm text-[#8B7355] mb-1">غرفة ملابس</div>
+                                    <div class="text-sm">غرفة ملابس MDF - زجاج</div>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="group-hover:text-[#8B7355] transition-colors font-bold">غرفة ملابس</h4>
+                    </div>
+                    <div class="group cursor-pointer">
+                        <div class="relative aspect-[3/4] overflow-hidden rounded-lg mb-4">
+                            <img src="https://scontent.fmji4-1.fna.fbcdn.net/v/t39.30808-6/485153101_643998151721536_7628772498209953548_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=wQQDhNbmEfUQ7kNvwElPL-P&_nc_oc=Adn2hvqRzaLxsZqr42FA7zdtABZlQ2q6yAmdy8LF0q5jqpSWlfvtuO33--p8jGTxNg0&_nc_zt=23&_nc_ht=scontent.fmji4-1.fna&_nc_gid=ADgpyOta6V51FKML6PhCkA&oh=00_AfgwbzB9Dm6vzTnTI9zMF0yt8oo_ia9n8un06CZed6pVXg&oe=692E521C"
+                                alt="Elegant Dining Set"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <div
+                                    class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                    <div class="text-sm text-[#8B7355] mb-1">غرفة ملايس</div>
+                                    <div class="text-sm">غرفة ملابس MDF - زجاج</div>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="group-hover:text-[#8B7355] transition-colors font-bold">غرفة ملايس</h4>
+                    </div>
+                    <div class="group cursor-pointer">
+                        <div class="relative aspect-[3/4] overflow-hidden rounded-lg mb-4">
+                            <img src="https://scontent.fmji4-1.fna.fbcdn.net/v/t39.30808-6/484982851_643998028388215_1231540195396772146_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=y2lPkIgkBbgQ7kNvwHYjqLL&_nc_oc=AdnKrctWQiKROMv_-Ahrw-LlNiYqydzhrzz1GhRcFx8sqj2jlVFgCrbUj9Veq-tqvBQ&_nc_zt=23&_nc_ht=scontent.fmji4-1.fna&_nc_gid=auDRGmc3Rz_tcgNYBV78fg&oh=00_AfhxvgYDED1eJkAAwFseM-6Lv0TtQXgGN_Km0TQlaykQuA&oe=692E6FB5"
+                                alt="Executive Office Suite"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <div
+                                    class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                    <div class="text-sm text-[#8B7355] mb-1">غرفة ملابس</div>
+                                    <div class="text-sm">غرفة ملابس MDF - زجاج</div>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="group-hover:text-[#8B7355] transition-colors font-bold">غرفة ملابس</h4>
                     </div>
                 </div>
             </div>
         </section>
 
+
         <!-- CTA Section -->
         <section class="py-24 bg-[#8B7355]">
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <h2 class="text-white mb-6 text-3xl font-bold">
-                    جاهز لتصميم أثاثك المخصص؟
+                    أثاثك، تصميمك الخاص
                 </h2>
                 <p class="text-xl text-neutral-50 mb-8">
-                    دعنا نبتكر قطع أثاث تعكس أسلوبك وتلبي احتياجاتك تمامًا. حدد موعدًا لاستشارة مع فريق التصميم لدينا
-                    اليوم.
+                    دعنا نصنع لك قطع أثاث مميزة تعكس ذوقك وتناسب كل احتياجاتك.
+
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
                     <a href="contact.html"
                         class="bg-white text-[#8B7355] hover:bg-neutral-100 px-8 py-3 rounded-md font-medium transition-colors">
-                        احصل على عرض سعر مجاني
-                    </a>
-                    <a href="projects.html"
-                        class="border border-white text-white hover:bg-white hover:text-[#8B7355] px-8 py-3 rounded-md font-medium transition-colors">
-                        شاهد محفظتنا
-                    </a>
+                        احصل على استشارة مجانية </a>
                 </div>
             </div>
         </section>
@@ -258,52 +380,56 @@
             <div class="grid md:grid-cols-4 gap-12 mb-12">
                 <div class="md:col-span-1 text-right md:text-right">
                     <div class="mb-4 flex justify-end md:justify-start">
-                        <img src="assets/logo.png" alt="الكيان" class="h-40 w-auto">
+                        <img src="assets/logo.png" alt="الكيان" class="h-20 w-auto">
                     </div>
                     <p class="text-sm mb-6">أثاث وأبواب ومطابخ مخصصة فاخرة مصنوعة بتميز ودقة</p>
                     <div class="flex gap-4 justify-end md:justify-start">
-                        <a href="#"
+                        <a href="https://www.facebook.com/share/17PHz2ZTSb/"
                             class="w-10 h-10 bg-neutral-800 rounded-lg flex items-center justify-center hover:bg-[#8B7355] transition-colors"><i
                                 data-lucide="facebook" class="w-5 h-5"></i></a>
-                        <a href="#"
+                        <a href="https://www.instagram.com/al_kayanly?igsh=ZnNvb2V2MWIyanFv"
                             class="w-10 h-10 bg-neutral-800 rounded-lg flex items-center justify-center hover:bg-[#8B7355] transition-colors"><i
                                 data-lucide="instagram" class="w-5 h-5"></i></a>
-                        <a href="#"
-                            class="w-10 h-10 bg-neutral-800 rounded-lg flex items-center justify-center hover:bg-[#8B7355] transition-colors"><i
-                                data-lucide="linkedin" class="w-5 h-5"></i></a>
                     </div>
                 </div>
-                <div>
+                <div dir="rtl">
                     <h4 class="text-white mb-4 font-bold">روابط سريعة</h4>
                     <ul class="space-y-3">
                         <li><a href="index.html" class="hover:text-[#8B7355] transition-colors">الرئيسية</a></li>
-                        <li><a href="about.html" class="hover:text-[#8B7355] transition-colors">من نحن</a></li>
                         <li><a href="projects.html" class="hover:text-[#8B7355] transition-colors">المشاريع</a></li>
                         <li><a href="process.html" class="hover:text-[#8B7355] transition-colors">العمليات</a></li>
                         <li><a href="contact.html" class="hover:text-[#8B7355] transition-colors">تواصل</a></li>
+                        <li><a href="about.html" class="hover:text-[#8B7355] transition-colors">من نحن</a></li>
                     </ul>
                 </div>
-                <div>
+                <div dir="rtl">
                     <h4 class="text-white mb-4 font-bold">خدماتنا</h4>
                     <ul class="space-y-3">
-                        <li><a href="furniture.html" class="hover:text-[#8B7355] transition-colors">أثاث مخصص</a></li>
-                        <li><a href="doors.html" class="hover:text-[#8B7355] transition-colors">أبواب فاخرة</a></li>
-                        <li><a href="kitchens.html" class="hover:text-[#8B7355] transition-colors">مطابخ راقية</a></li>
+                        <li><a href="kitchens.html" class="hover:text-[#8B7355] transition-colors">مطابخ فاخرة</a></li>
+                        <li><a href="doors.html" class="hover:text-[#8B7355] transition-colors">أبواب راقية</a></li>
+                        <li><a href="furniture.html" class="hover:text-[#8B7355] transition-colors">أثاث راقٍ</a></li>
                         <li><a href="contact.html" class="hover:text-[#8B7355] transition-colors">استشارة</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="text-white mb-4 font-bold">تواصل معنا</h4>
                     <ul class="space-y-3">
-                        <li class="flex items-start gap-3"><i data-lucide="map-pin"
-                                class="text-[#8B7355] mt-1 flex-shrink-0 w-5 h-5"></i><span class="text-sm">الرياض،
-                                السعودية</span></li>
-                        <li class="flex items-start gap-3"><i data-lucide="phone"
-                                class="text-[#8B7355] mt-1 flex-shrink-0 w-5 h-5"></i><span
-                                class="text-sm dir-ltr text-left">+966 XX XXX XXXX</span></li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="map-pin" class="text-[#8B7355] mt-1 flex-shrink-0 w-5 h-5"></i>
+                            <span class="text-sm">طرابلس - ليبيا</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="phone" class="text-[#8B7355] mt-1 flex-shrink-0 w-5 h-5"></i>
+                            <div class="flex flex-col">
+                                <span class="text-sm dir-ltr text-left">+218913338808</span>
+                                <span class="text-sm dir-ltr text-left">+218923338808</span>
+                                <span class="text-sm dir-ltr text-left">+218933338808</span>
+                                <span class="text-sm dir-ltr text-left">+218943338808</span>
+                            </div>
+                        </li>
                         <li class="flex items-start gap-3"><i data-lucide="mail"
                                 class="text-[#8B7355] mt-1 flex-shrink-0 w-5 h-5"></i><span
-                                class="text-sm">info@alkiyan.com</span></li>
+                                class="text-sm">info@alkayan.com.ly</span></li>
                     </ul>
                 </div>
             </div>
@@ -319,6 +445,7 @@
             </div>
         </div>
     </footer>
+
 
     <script>
         lucide.createIcons();

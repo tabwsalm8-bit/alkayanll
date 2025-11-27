@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>المطابخ - الكيان</title>
+    <title>Al-Kayan</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/55.png">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <link
@@ -24,7 +26,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
                 <a href="index.html" class="flex items-center ml-auto">
-                    <img src="assets/logo.png" alt="الكيان" class="h-40 w-auto">
+                    <img src="assets/logo.png" alt="الكيان" class="h-20 w-auto">
                 </a>
                 <nav class="hidden md:flex items-center gap-8">
                     <a href="index.html" class="transition-colors text-neutral-700 hover:text-[#8B7355]">الرئيسية</a>
@@ -32,16 +34,6 @@
                     <a href="furniture.html" class="transition-colors text-neutral-700 hover:text-[#8B7355]">الأثاث</a>
                     <a href="kitchens.html" class="transition-colors text-[#8B7355]">المطابخ</a>
                     <a href="about.html" class="transition-colors text-neutral-700 hover:text-[#8B7355]">من نحن</a>
-                    <div class="relative group">
-                        <button class="p-2 text-neutral-700 hover:text-[#8B7355] transition-colors">
-                            <i data-lucide="more-vertical" class="w-5 h-5"></i>
-                        </button>
-                        <div
-                            class="absolute left-0 mt-2 w-48 bg-white border border-neutral-200 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-                            <a href="invoice.html"
-                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 text-right">فاتورتي</a>
-                        </div>
-                    </div>
                 </nav>
                 <button id="mobile-menu-btn" class="md:hidden p-2 text-neutral-700">
                     <i data-lucide="menu" class="w-6 h-6"></i>
@@ -58,8 +50,6 @@
                     <a href="kitchens.html" class="text-right transition-colors text-[#8B7355]">المطابخ</a>
                     <a href="about.html" class="text-right transition-colors text-neutral-700 hover:text-[#8B7355]">من
                         نحن</a>
-                    <a href="invoice.html"
-                        class="text-right transition-colors text-neutral-700 hover:text-[#8B7355]">فاتورتي</a>
                 </nav>
             </div>
         </div>
@@ -69,18 +59,18 @@
         <!-- Hero Section -->
         <section class="relative pt-32 pb-24 bg-neutral-900">
             <div class="absolute inset-0 opacity-30">
-                <img src="https://images.unsplash.com/photo-1639405069836-f82aa6dcb900?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBraXRjaGVuJTIwbHV4dXJ5fGVufDF8fHx8MTc2MTQwMjEzOXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-                    alt="Luxury Kitchen" class="w-full h-full object-cover">
+                <img src="assets/Multi-Level Kitchen Islands_ Design Revolution.jpeg" alt="Luxury Kitchen"
+                    class="w-full h-full object-cover">
             </div>
             <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <span class="text-[#8B7355] tracking-wider uppercase">مطابخ فاخرة</span>
                 <h1 class="text-white mt-4 mb-6 text-4xl font-bold">
-                    حلول مطابخ فاخرة
-                    <span class="block mt-2 text-[#8B7355]">مطابخ راقية ومخصصة</span>
+                    جمال وابتكار في كل زاوية <span class="block mt-2 text-[#8B7355]">مطابخ فاخرة حسب ذوقك
+                    </span>
                 </h1>
                 <p class="text-xl text-neutral-300 max-w-3xl mx-auto mb-8">
-                    حول مطبخك إلى قلب منزلك بتصاميمنا المخصصة. نجمع بين الوظائف العملية والجمال والابتكار لإنشاء مطابخ
-                    تلهمك.
+                    حوّل مطبخك إلى قلب منزلك مع تصاميمنا المخصصة التي تجمع بين الأناقة والابتكار والوظائف العملية. كل
+                    مطبخ صُمم ليُلهمك ويعكس أسلوبك الشخصي
                 </p>
                 <a href="contact.html"
                     class="inline-block bg-[#8B7355] hover:bg-[#6F5C44] text-white px-8 py-3 rounded-md font-medium transition-colors">
@@ -123,60 +113,154 @@
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-12">
                     <h2 class="mb-4 text-3xl font-bold">معرض المطابخ</h2>
-                    <p class="text-xl text-neutral-600 max-w-3xl mx-auto mb-8">
-                        استكشف مجموعتنا من مشاريع المطابخ المكتملة
-                    </p>
                 </div>
 
                 <!-- Gallery Grid (Simplified static version) -->
-                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
                     <div class="group cursor-pointer">
                         <div class="relative aspect-[4/3] overflow-hidden rounded-lg mb-4">
-                            <img src="https://images.unsplash.com/photo-1642979427252-13d5fd18bb61?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB3aGl0ZSUyMGtpdGNoZW58ZW58MXx8fHwxNzYxNDM5MTk5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                            <img src="https://scontent.fmji4-1.fna.fbcdn.net/v/t39.30808-6/502488598_699162226205128_139602206804986875_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_ohc=I7XTfWK4NYkQ7kNvwFAyXWE&_nc_oc=Adl78EQtkdE4PPpTbC3b0J5t5oJh3tCFtA4NO_kjLxEsYgwrnLbCLUMaaUsqgqc0DSI&_nc_zt=23&_nc_ht=scontent.fmji4-1.fna&_nc_gid=buJG12FBcAFBMUv8FPldLQ&oh=00_Afj2FGx7-RHorov9_8RCme4HeKPE07j6ges1gbXxcgp7wg&oe=692E55AD"
                                 alt="Modern White Kitchen"
                                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                             <div
                                 class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                 <div
                                     class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                                    <div class="text-sm text-[#8B7355] mb-1">Modern</div>
-                                    <div class="text-sm">Sleek minimalist design with high-gloss cabinets</div>
+                                    <div class="text-sm text-[#8B7355] mb-1">مطبخ كلاسيكي</div>
+                                    <div class="text-sm">تصاميم تجمع بين الأناقة التقليدية والوظائف العملية، لتصبح مطبخك
+                                        قلبًا دافئًا لمنزلك.</div>
                                 </div>
                             </div>
                         </div>
-                        <h3 class="group-hover:text-[#8B7355] transition-colors font-bold">Modern White Kitchen</h3>
+                        <h3 class="group-hover:text-[#8B7355] transition-colors font-bold">مطبخ كلاسيكي</h3>
                     </div>
                     <div class="group cursor-pointer">
                         <div class="relative aspect-[4/3] overflow-hidden rounded-lg mb-4">
-                            <img src="https://images.unsplash.com/photo-1621494548002-bfc916172ead?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBkYXJrJTIwa2l0Y2hlbnxlbnwxfHx8fDE3NjE0MzkxOTl8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                            <img src="https://scontent.fmji4-1.fna.fbcdn.net/v/t39.30808-6/502471968_699162259538458_2035752827728225816_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_ohc=vXB6InoL7IgQ7kNvwHAHpA5&_nc_oc=Adm6fJkjpWgvFU19vOZ3P3ZDvKvDCHIxi5EI8oTDOGHCR7ReXi9Ojjswi2LXTECa-Dg&_nc_zt=23&_nc_ht=scontent.fmji4-1.fna&_nc_gid=xTh83TXiLMoZEbVRxK-k7g&oh=00_Afh8Xwj5Kg_mGKNoGgxLs9GZmvGTgzMGm3olK8aEC5qORg&oe=692E7F01"
                                 alt="Luxury Dark Kitchen"
                                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                             <div
                                 class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                 <div
                                     class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                                    <div class="text-sm text-[#8B7355] mb-1">Contemporary</div>
-                                    <div class="text-sm">Sophisticated dark wood with premium finishes</div>
+                                    <div class="text-sm text-[#8B7355] mb-1">مطبخ كلاسيكي</div>
+                                    <div class="text-sm">تصاميم تجمع بين الأناقة التقليدية والوظائف العملية، لتصبح مطبخك
+                                        قلبًا دافئًا لمنزلك.</div>
                                 </div>
                             </div>
                         </div>
-                        <h3 class="group-hover:text-[#8B7355] transition-colors font-bold">Luxury Dark Kitchen</h3>
+                        <h3 class="group-hover:text-[#8B7355] transition-colors font-bold">مطبخ كلاسيكي</h3>
                     </div>
                     <div class="group cursor-pointer">
                         <div class="relative aspect-[4/3] overflow-hidden rounded-lg mb-4">
-                            <img src="https://images.unsplash.com/photo-1722605090433-41d1183a792d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxraXRjaGVuJTIwaXNsYW5kJTIwbWFyYmxlfGVufDF8fHx8MTc2MTQzOTE5OHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                            <img src="https://scontent.fmji4-1.fna.fbcdn.net/v/t39.30808-6/502768117_699162289538455_4545872536801674992_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=IYC2cFIz1JYQ7kNvwEClLGP&_nc_oc=AdnBFg9nRINWuQ0ZTk9pMtYAgjcfJRXFLmOKBLPSZgrmsdUH05oPpNTIbOv3po5jnrI&_nc_zt=23&_nc_ht=scontent.fmji4-1.fna&_nc_gid=qi4CoBFda9YXczO4z2sI2A&oh=00_AfjcXhe_xmH22hWnQR7g5WToRkAUKDrWBIYUWY46T8S3pg&oe=692E6D3F"
                                 alt="Marble Island Kitchen"
                                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                             <div
                                 class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                 <div
                                     class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                                    <div class="text-sm text-[#8B7355] mb-1">Modern</div>
-                                    <div class="text-sm">Statement marble island with integrated seating</div>
+                                    <div class="text-sm text-[#8B7355] mb-1">مطبخ كلاسيكي</div>
+                                    <div class="text-sm">تصاميم تجمع بين الأناقة التقليدية والوظائف العملية، لتصبح مطبخك
+                                        قلبًا دافئًا لمنزلك.</div>
                                 </div>
                             </div>
                         </div>
-                        <h3 class="group-hover:text-[#8B7355] transition-colors font-bold">Marble Island Kitchen</h3>
+                        <h3 class="group-hover:text-[#8B7355] transition-colors font-bold">مطبخ كلاسيكي</h3>
+                    </div>
+                    <div class="group cursor-pointer">
+                        <div class="relative aspect-[4/3] overflow-hidden rounded-lg mb-4">
+                            <img src="https://scontent.fmji4-1.fna.fbcdn.net/v/t39.30808-6/502626939_699162329538451_1186840680265041491_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=JP31v1wV3eAQ7kNvwEFtQWE&_nc_oc=AdlyTtyaiFgIshLlKowBdjf_p2ZWhqnyo4zjk_iGJRDYwESzmLohJSPajgcAq7YG9FY&_nc_zt=23&_nc_ht=scontent.fmji4-1.fna&_nc_gid=YcAeQqIQ7Pi0exw4Kd-nBQ&oh=00_AfhIfOi3UMZFlXNhlZ_WmSnhs-KBqRLHB0Y7uPY0w33LvQ&oe=692E6895"
+                                alt="Marble Island Kitchen"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <div
+                                    class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                    <div class="text-sm text-[#8B7355] mb-1">مطبخ كلاسيكي</div>
+                                    <div class="text-sm">تصاميم تجمع بين الأناقة التقليدية والوظائف العملية، لتصبح مطبخك
+                                        قلبًا دافئًا لمنزلك.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="group-hover:text-[#8B7355] transition-colors font-bold">مطبخ كلاسيكي</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Gallery Section -->
+        <section class="pt-2 pb-16 bg-neutral-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+                <!-- Gallery Grid (Simplified static version) -->
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="group cursor-pointer">
+                        <div class="relative aspect-[4/3] overflow-hidden rounded-lg mb-4">
+                            <img src="https://scontent.fmji4-1.fna.fbcdn.net/v/t39.30808-6/482252166_643998251721526_3288533850880274804_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=8Rmrm1HvshYQ7kNvwGX5JVX&_nc_oc=AdlFVfygQuaK7vy2K7Uig-d9KOtCe_SXP6NsT0_1-KsxRq8My-wjapt7hcOlEXQSiVk&_nc_zt=23&_nc_ht=scontent.fmji4-1.fna&_nc_gid=yiRuGh8ASY5bmZsWEXvj2w&oh=00_AfhsQJHK0sMZQTL6IOHPmd7RVL0h9HOLP9eKnvAso7ZJ6A&oe=692E541C"
+                                alt="Modern White Kitchen"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <div
+                                    class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                    <div class="text-sm text-[#8B7355] mb-1">مطبخ عصري</div>
+                                    <div class="text-sm">تصميم مطابخ عصرية يجمع بين الأناقة التقليدية والوظائف العملية،
+                                        لتصبح مطبخك قلبًا دافئًا لمنزلك.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="group-hover:text-[#8B7355] transition-colors font-bold">مطبخ عصري</h3>
+                    </div>
+                    <div class="group cursor-pointer">
+                        <div class="relative aspect-[4/3] overflow-hidden rounded-lg mb-4">
+                            <img src="https://scontent.fmji4-1.fna.fbcdn.net/v/t39.30808-6/484860059_643997968388221_4901862811969143154_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=eFQWB4Xbqh8Q7kNvwHHs01j&_nc_oc=Adk1Am_GAYohrunn1YvXrZNwVzUYgS_o5R0u4ut-n3pQRxB_fqoQFYkdr6vtjaia5-U&_nc_zt=23&_nc_ht=scontent.fmji4-1.fna&_nc_gid=yiRuGh8ASY5bmZsWEXvj2w&oh=00_AfjzUloCxSvIVgS22W7LpsSpRi_-uK7hYEiDDTfchf_KbQ&oe=692E800F"
+                                alt="Luxury Dark Kitchen"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <div
+                                    class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                    <div class="text-sm text-[#8B7355] mb-1">مطبخ عصري</div>
+                                    <div class="text-sm">تصميم مطابخ عصرية يجمع بين الأناقة التقليدية والوظائف العملية،
+                                        لتصبح مطبخك قلبًا دافئًا لمنزلك.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="group-hover:text-[#8B7355] transition-colors font-bold">مطبخ عصري</h3>
+                    </div>
+                    <div class="group cursor-pointer">
+                        <div class="relative aspect-[4/3] overflow-hidden rounded-lg mb-4">
+                            <img src="https://scontent.fmji4-1.fna.fbcdn.net/v/t39.30808-6/484839018_643998078388210_2404592926464238933_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=BezYMu7UQBIQ7kNvwHRs6Ox&_nc_oc=AdmZ6ydDKHjRTMaIzi-82D8qbqHKvXCGKlr8OOpBxEHy1zgjSx-26JmObq7SXg6iaE8&_nc_zt=23&_nc_ht=scontent.fmji4-1.fna&_nc_gid=jqybpFqgZEdz3_GGHxnQ6g&oh=00_AfiIl1Crwn3N7gRewbmfEqQITZWk0ukxOjA8ss6uuEtupg&oe=692E66FC"
+                                alt="Marble Island Kitchen"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <div
+                                    class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                    <div class="text-sm text-[#8B7355] mb-1">مطبخ كلاسيكي</div>
+                                    <div class="text-sm">تصاميم تجمع بين الأناقة التقليدية والوظائف العملية، لتصبح مطبخك
+                                        قلبًا دافئًا لمنزلك.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="group-hover:text-[#8B7355] transition-colors font-bold">مطبخ كلاسيكي</h3>
+                    </div>
+                    <div class="group cursor-pointer">
+                        <div class="relative aspect-[4/3] overflow-hidden rounded-lg mb-4">
+                            <img src="https://scontent.fmji4-1.fna.fbcdn.net/v/t39.30808-6/485369621_643997828388235_4447984684938695861_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=stNTfgC5NXIQ7kNvwGp4BTd&_nc_oc=Adm94sA4n_RK0-ehZRHnzOFir56aySD_25qN2S7qIN9wtXsNmHmpiwChe4WdZZQbGvw&_nc_zt=23&_nc_ht=scontent.fmji4-1.fna&_nc_gid=vkpwQb2KXAFgXr2OKw1FDw&oh=00_AfjTQNRPhcDd8mqHHonFwHEFVBebxL-Vm79gp3qoxKkwRg&oe=692E7E44"
+                                alt="Marble Island Kitchen"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <div
+                                    class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                    <div class="text-sm text-[#8B7355] mb-1">مطبخ كلاسيكي</div>
+                                    <div class="text-sm">تصاميم تجمع بين الأناقة التقليدية والوظائف العملية، لتصبح مطبخك
+                                        قلبًا دافئًا لمنزلك.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="group-hover:text-[#8B7355] transition-colors font-bold">مطبخ كلاسيكي</h3>
                     </div>
                 </div>
             </div>
@@ -186,20 +270,14 @@
         <section class="py-24 bg-[#8B7355]">
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <h2 class="text-white mb-6 text-3xl font-bold">
-                    جاهز لإنشاء مطبخ أحلامك؟
+                    حوّل مطبخك إلى مطبخ أحلامك
                 </h2>
                 <p class="text-xl text-neutral-50 mb-8">
-                    احجز استشارة مجانية مع خبراء تصميم المطابخ لدينا واكتشف الإمكانيات لمساحتك.
-                </p>
+                    استشارة مجانية مع فريق تصميم المطابخ لدينا تتيح لك اكتشاف كل الإمكانيات لمساحتك. </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
                     <a href="contact.html"
                         class="bg-white text-[#8B7355] hover:bg-neutral-100 px-8 py-3 rounded-md font-medium transition-colors">
-                        احصل على عرض سعر مجاني
-                    </a>
-                    <a href="process.html"
-                        class="border border-white text-white hover:bg-white hover:text-[#8B7355] px-8 py-3 rounded-md font-medium transition-colors">
-                        تعرف على عملياتنا
-                    </a>
+                        احصل على عرض سعر مجاني الآن! </a>
                 </div>
             </div>
         </section>
