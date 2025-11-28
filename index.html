@@ -4,12 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Al-Kayan</title>
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/55.png">
-    <!-- Logo -->
-    <a href="index.html" class="flex items-center ml-auto">
-        <img src="assets/logo.png" alt="Al-Kayan" class="h-20 w-auto">
-    </a>
+    <title>Al-Kayan | شركة الكيان للأبواب والمطابخ</title>
+
+    <!-- FAVICON (هذا اللي يخلي الشعار يطلع في Google بدل الكوكب) -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/logo.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/logo.png">
+    <link rel="apple-touch-icon" href="assets/logo.png">
+    <meta name="msapplication-TileImage" content="assets/logo.png">
+
+    <!-- SEO META TAGS -->
+    <meta name="description" content="شركة الكيان لصناعة الأبواب، المطابخ، والأثاث بجودة عالية وتصاميم فاخرة.">
+    <meta name="keywords" content="الكيان, أبواب, مطابخ, أثاث, خشب, تصميم داخلي, Libya">
+
+    <!-- JSON-LD (يساعد Google يعرف اسم الشركة والشعار) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Al-Kayan",
+        "url": "https://alkayan.ly",
+        "logo": "https://alkayan.ly/assets/logo.png"
+    }
+    </script>
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -17,7 +33,7 @@
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
 
-    <!-- Google Fonts (Inter/Cairo for Arabic support) -->
+    <!-- Google Fonts -->
     <link
         href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap"
         rel="stylesheet">
@@ -32,6 +48,7 @@
         }
     </style>
 </head>
+
 
 <body class="bg-white min-h-screen flex flex-col">
 
